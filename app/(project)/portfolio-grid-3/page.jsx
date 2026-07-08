@@ -1,0 +1,47 @@
+import Footer15 from "@/components/footers/Footer15";
+import Link from "next/link";
+import Header1 from "@/components/headers/Header1";
+
+import Portfolio2 from "@/components/portfolio/Portfolio2";
+import React from "react";
+
+export const metadata = {
+  title: "شبکه‌ای نمونه‌کارها ۳ || صنعت - قالب کارخانه و صنعتی",
+  description: "صنعت - قالب کارخانه و صنعتی",
+};
+export default function page() {
+  return (
+    <>
+      <div className="page-wraper  ">
+        <Header1 />
+        <div className="page-content bg-white">
+          <div
+            className="dlab-bnr-inr overlay-black-middle bg-pt"
+            style={{ backgroundImage: "url(/images/banner/bnr4.jpg)" }}
+          >
+            <div className="container">
+              <div className="dlab-bnr-inr-entry">
+                <h1 className="text-white">نمونه‌کارها</h1>
+                {/* Breadcrumb row */}
+                <div className="breadcrumb-row">
+                  <ul className="list-inline">
+                    <li>
+                      <Link href={`/`}>خانه</Link>
+                    </li>
+                    <li>نمونه‌کارها</li>
+                  </ul>
+                </div>
+                {/* Breadcrumb row END */}
+              </div>
+            </div>
+          </div>
+
+          <div className="content-block">
+            <Portfolio2 />
+          </div>
+        </div>
+        <Footer15 />
+      </div>
+    </>
+  );
+}
