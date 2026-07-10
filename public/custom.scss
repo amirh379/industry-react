@@ -631,13 +631,23 @@ a {
   height: 100%;
   border-top: 4px solid var(--color-primary);
   .expert-card-media {
+    position: relative;
     img {
       width: 100%;
-      height: auto;
+      height: 320px;
+      object-fit: cover;
       display: block;
     }
   }
+  .expert-card-info {
+    padding: 20px;
+  }
+  .dlab-title {
+    margin-bottom: 6px;
+  }
   .dlab-position {
+    display: block;
+    margin-bottom: 14px;
     color: var(--color-primary);
     font-size: 14px;
   }
@@ -670,6 +680,7 @@ a {
   border: 1px solid var(--rgba-primary-3);
 }
 .expert-card-phone {
+  margin-bottom: 14px;
   a {
     display: inline-flex;
     align-items: center;

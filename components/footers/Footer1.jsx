@@ -89,7 +89,7 @@ export default function Footer1() {
                   اگر سوالی دارید، در خبرنامه ما عضو شوید تا از آخرین محصولات
                   ما مطلع شوید.
                 </p>
-                <form
+                {/* <form
                   className="dzSubscribe"
                   onSubmit={(e) => e.preventDefault()}
                 >
@@ -113,7 +113,7 @@ export default function Footer1() {
                       </div>
                     </div>
                   </div>
-                </form>
+                </form> */}
               </div>
             </div>
           </div>

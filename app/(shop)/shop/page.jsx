@@ -1,6 +1,6 @@
 import Footer15 from "@/components/footers/Footer15";
 import Link from "next/link";
-import Footer15 from "@/components/footers/Footer15";
+// import Footer15 from "@/components/footers/Footer15";
 import Header1 from "@/components/headers/Header1";
 import Shop from "@/components/shop/Shop";
 import ShopFeatures from "@/components/shop/ShopFeatures";

@@ -8,7 +8,7 @@ export default function Footer15() {
   return (
     <footer className="site-footer style1">
       {/* Footer Info */}
-      <div className="section-full p-t50 p-b20 bg-primary text-white overlay-primary-dark footer-info-bar">
+      {/* <div className="section-full p-t50 p-b20 bg-primary text-white overlay-primary-dark footer-info-bar">
         <div className="container">
           <div className="row">
             <div className="col-lg-3 col-md-6 col-sm-6 m-b30">
@@ -78,7 +78,7 @@ export default function Footer15() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Footer Info End */}
       {/* Footer Top */}
       <div className="footer-top">

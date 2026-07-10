@@ -23,16 +23,18 @@ export default function Header1() {
               </ul>
             </div>
             <div className="dlab-topbar-right header-topbar-actions">
-              <Link href={`/shop`} className="site-button radius-no btnhover13">
-                محصولات
-              </Link>
-              <Link
-                href={`/catalog`}
-                className="site-button outline radius-no btnhover13 catalog-btn"
-              >
-                <i className="fas fa-download m-r5" />
-                دریافت کاتالوگ
-              </Link>
+              <div className="dlab-social-icon">
+                <ul>
+                  {socialLinks.map((elm, i) => (
+                    <li key={i}>
+                      <a
+                        className={`site-button circle-sm outline ${elm.className}`}
+                        href={elm.href}
+                      />
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -62,20 +64,6 @@ export default function Header1() {
               <span />
               <span />
             </button>
-            {/* extra nav */}
-            <div className="extra-nav">
-              <div className="extra-cell">
-                <button
-                  id="quik-search-btn"
-                  type="button"
-                  className="site-button-link"
-                >
-                  <i className="la la-search" />
-                </button>
-              </div>
-            </div>
-            {/* Quik search */}
-
             {/* main nav */}
             <div
               className="header-nav navbar-collapse collapse justify-content-end"

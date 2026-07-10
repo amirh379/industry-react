@@ -11,18 +11,20 @@ import {
 function ExpertCard({ expert, isExternal }) {
   const telHref = expert.phone.replace(/-/g, "");
   return (
-    <div className="col-lg-4 col-md-6 col-sm-12">
+    <div className="col-lg-3 col-md-6 col-sm-6">
       <div
-        className={`expert-card m-b30 bg-white box-shadow radius-sm ${
+        className={`dlab-box m-b30 dlab-team1 expert-card ${
           isExternal ? "expert-card-external" : ""
         }`}
       >
         <div className="expert-card-media">
           <Image src={expert.image} alt={expert.name} width={358} height={358} />
         </div>
-        <div className="expert-card-info p-a20">
-          <h4 className="dlab-title m-b5">{expert.name}</h4>
-          <span className="dlab-position d-block m-b15">{expert.position}</span>
+        <div className="dlab-info expert-card-info">
+          <h4 className="dlab-title">
+            <a href="#">{expert.name}</a>
+          </h4>
+          <span className="dlab-position">{expert.position}</span>
           <div className="expert-card-regions m-b15">
             <h6 className="m-b10">
               <i className="ti-location-pin" /> {expert.regionLabel}
@@ -44,10 +46,7 @@ function ExpertCard({ expert, isExternal }) {
           <ul className="dlab-social-icon dez-border">
             {expert.socialLinks.map((social, i) => (
               <li key={i}>
-                <a
-                  className={`site-button circle-sm outline ${social.platform}`}
-                  href={social.href}
-                >
+                <a className={social.platform} href={social.href}>
                   <i className={socialIconClasses[social.platform]} />
                 </a>
               </li>
