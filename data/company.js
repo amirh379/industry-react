@@ -1,5 +1,5 @@
-export const companyLogo = "/images/company/logo.png";
-export const companyLogoLight = "/images/company/logo.png";
+export const companyLogo = "/images/SamenLogo.png";
+export const companyLogoLight = "/images/SamenLogo.png";
 
 export const companyInfo = {
   name: "ثامن فرفورژه",

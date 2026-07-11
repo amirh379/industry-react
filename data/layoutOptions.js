@@ -4,7 +4,7 @@ export const skins = [
     colorTheme: "skin-1-theme",
     logoSelector: [".logo-dark img", ".logo-white img", ".logo-center .logo-c"],
     logoImage: [
-      "/images/logo.png",
+      "/images/SamenLogo.png",
       "/images/logo-white.png",
       "/images/logo-center.png",
     ],
@@ -80,7 +80,7 @@ export const skins = [
     colorTheme: "skin-8-theme",
     logoSelector: [".logo-dark img", ".logo-white img", ".logo-center .logo-c"],
     logoImage: [
-      "/images/logo-8.png",
+      "/images/SamenLogo.png",
       "/images/logo-white-8.png",
       "/images/logo-center-8.png",
     ],
