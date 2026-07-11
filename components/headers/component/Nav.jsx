@@ -6,8 +6,8 @@ export default function Nav() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState("");
   const aboutLinks = [
-    { href: "/about-1", label: "about us" },
-    { href: "/shortcode-testimonials", label: "customers" },
+    { href: "/about-1", label: "درباره ما" },
+    { href: "/shortcode-testimonials", label: "مشتریان" },
   ];
   const isRouteActive = (href) => {
     const currentSegment = pathname.split("/")[1];
@@ -72,7 +72,7 @@ export default function Nav() {
                 className={isRouteActive(item.href) ? "menuActive" : ""}
                 href={item.href}
               >
-                {item.label === "customers" ? "مشتریان" : "درباره ما"}
+                {item.label}
               </Link>
             </li>
           ))}

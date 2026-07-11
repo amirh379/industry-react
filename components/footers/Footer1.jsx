@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { footerLinks } from "@/data/footerLinks";
+import { companyInfo } from "@/data/company";
 export default function Footer1() {
   return (
     <footer className="site-footer style1">
@@ -60,10 +61,10 @@ export default function Footer1() {
           <div className="row">
             <div className="col-md-4 col-sm-12">
               <div className="widget widget_about">
-                <h4 className="footer-title">درباره صنعت</h4>
+                <h4 className="footer-title">درباره {companyInfo.name}</h4>
                 <p>
-                  ما با بیش از یک دهه تجربه در صنعت تولید، محصولاتی باکیفیت و
-                  قابل اعتماد برای مشتریان خود فراهم می‌کنیم.
+                  {companyInfo.fullName}؛ بزرگ‌ترین تولیدکننده و صادرکننده انواع
+                  درب‌های لوکس، درب‌های پیش‌ساخته و قطعات فرفورژه در خاورمیانه.
                 </p>
                 <Link href={`/about-1`} className="readmore">
                   ادامه مطلب
@@ -115,34 +116,6 @@ export default function Footer1() {
                   </div>
                 </form> */}
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      {/* footer bottom part */}
-      <div className="footer-bottom footer-line">
-        <div className="container">
-          <div className="footer-bottom-in">
-            <div className="footer-bottom-logo">
-              <Link href={`/`}>
-                <img alt="" src="/images/logo-light.png" />
-              </Link>
-            </div>
-            <div className="footer-bottom-social">
-              <ul className="dlab-social-icon dez-border">
-                <li>
-                  <a className="fab fa-facebook-f" href="#" />
-                </li>{" "}
-                <li>
-                  <a className="fab fa-twitter" href="#" />
-                </li>{" "}
-                <li>
-                  <a className="fab fa-linkedin-in" href="#" />
-                </li>{" "}
-                <li>
-                  <a className="fab fa-pinterest-p" href="#" />
-                </li>
-              </ul>
             </div>
           </div>
         </div>

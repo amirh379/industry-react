@@ -4,8 +4,9 @@ import React, { useEffect, useRef, useState } from "react";
 import Nav from "./component/Nav";
 import Link from "next/link";
 import Image from "next/image";
-import { socialLinks } from "@/data/socials";
 import { headerLinks } from "@/data/headerLinks";
+import { companyLogo } from "@/data/company";
+import SocialIconList from "./component/SocialIconList";
 import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
 import { useContextElement } from "@/context/Context";
 import { formatToman } from "@/utlis/formatToman";
@@ -45,7 +46,7 @@ export default function Header22() {
       <div className="top-bar">
         <div className="container">
           <div className="row d-flex justify-content-between align-items-center">
-            <div className="dlab-topbar-left">
+            <div className="dlab-topbar-left topbar-left-with-social">
               <ul>
                 {headerLinks.map((link, index) => (
                   <li key={index}>
@@ -53,6 +54,7 @@ export default function Header22() {
                   </li>
                 ))}
               </ul>
+              <SocialIconList />
             </div>
             <div className="dlab-topbar-right header-topbar-actions">
               <Link href={`/shop`} className="site-button radius-no btnhover13">
@@ -60,7 +62,7 @@ export default function Header22() {
               </Link>
               <Link
                 href={`/catalog`}
-                className="site-button outline radius-no btnhover13 catalog-btn"
+                className="site-button radius-no btnhover13 catalog-btn"
               >
                 <i className="fas fa-download m-r5" />
                 دریافت کاتالوگ
@@ -76,7 +78,7 @@ export default function Header22() {
             {/* website logo */}
             <div className="logo-header mostion logo-dark">
               <Link href={`/`}>
-                <img alt="" width="258" height="75" src="/images/logo.png" />
+                <img alt="ثامن فرفورژه" width="258" height="75" src={companyLogo} />
               </Link>
             </div>
             {/* nav toggle button */}
@@ -219,26 +221,13 @@ export default function Header22() {
             >
               <div className="logo-header d-md-block d-lg-none">
                 <Link href={`/`}>
-                  <img alt="" width="258" height="75" src="/images/logo.png" />
+                  <img alt="ثامن فرفورژه" width="258" height="75" src={companyLogo} />
                 </Link>
               </div>
               <ul className="nav navbar-nav">
                 <Nav />
               </ul>
-              <div className="dlab-social-icon">
-                <ul>
-                  {socialLinks.map((elm, i) => (
-                    <React.Fragment key={i}>
-                      <li>
-                        <a
-                          className={`site-button circle-sm outline ${elm.className} `}
-                          href={elm.href}
-                        />
-                      </li>{" "}
-                    </React.Fragment>
-                  ))}
-                </ul>
-              </div>
+              <SocialIconList />
             </div>
           </div>
         </div>

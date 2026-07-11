@@ -1,44 +1,26 @@
 "use client";
-import { services } from "@/data/services";
+import { samenProducts } from "@/data/samenProducts";
 import React from "react";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import Link from "next/link";
-export default function About() {
-  const settings = {
-    breakpoints: {
-      1199: {
-        slidesPerView: 3, // When window width is <= 1199px
-      },
-      1024: {
-        slidesPerView: 2, // When window width is <= 768px
-      },
-      480: {
-        slidesPerView: 2, // When window width is <= 480px
-      },
-      0: {
-        slidesPerView: 1,
-      },
-    },
-  };
 
+export default function About() {
   return (
     <div className="section-full bg-gray content-inner about-carousel-ser">
       <div className="container">
         <div className="section-head text-center">
           <h2 className="title">
-            چرا مشتریان ما را <br />
-            <span className="text-primary">انتخاب می‌کنند</span>
+            محصولات <span className="text-primary">ثامن فرفورژه</span>
           </h2>
           <p>
-            تعهد ما به کیفیت، دقت در زمان‌بندی و پشتیبانی مستمر باعث شده تا
-            مشتریان صنعتی ما همواره به همکاری با ما ادامه دهند.
+            طیف کامل محصولات فرفورژه، درب‌های لوکس و سفارشی، و راهکارهای
+            تخصصی برای پروژه‌های ساختمانی و ویلایی.
           </p>
         </div>
         <Swiper
-          {...settings}
-          initialSlide={3}
+          initialSlide={0}
           loop
           slidesPerGroupAuto
           spaceBetween={30}
@@ -67,26 +49,26 @@ export default function About() {
           data-wow-delay="0.2s"
           style={{ overflow: "visible" }}
         >
-          {services.map((elm, i) => (
+          {samenProducts.map((elm, i) => (
             <SwiperSlide key={i} className="item">
               <div className="dlab-box service-media-bx">
                 <div className="dlab-media">
-                  <Link href={`/about-1`}>
+                  <Link href={elm.href}>
                     <Image
                       className="lazy"
                       width={500}
                       height={357}
                       src={elm.imageSrc}
-                      alt=""
+                      alt={elm.title}
                     />
                   </Link>
                 </div>
                 <div className="dlab-info text-center">
                   <h2 className="dlab-title">
-                    <Link href={`/about-1`}>{elm.title}</Link>
+                    <Link href={elm.href}>{elm.title}</Link>
                   </h2>
                   <p>{elm.description}</p>
-                  <Link href={`/about-1`} className="site-button btnhover13">
+                  <Link href={elm.href} className="site-button btnhover13">
                     بیشتر بدانید
                   </Link>
                 </div>

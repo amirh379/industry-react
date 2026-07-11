@@ -1,8 +1,24 @@
 export const socialLinks = [
-  { className: "fab fa-facebook-f facebook", href: "#" },
-  { className: "fab fa-twitter twitter", href: "#" },
-  { className: "fab fa-linkedin-in linkedin", href: "#" },
-  { className: "fab fa-instagram instagram", href: "#" },
+  {
+    className: "instagram",
+    iconClass: "fab fa-instagram",
+    href: "https://www.instagram.com/samenferforge/",
+  },
+  {
+    className: "telegram",
+    iconClass: "fab fa-telegram-plane",
+    href: "https://t.me/Hnsamenferforge",
+  },
+  {
+    className: "linkedin",
+    iconClass: "fab fa-linkedin-in",
+    href: "#",
+  },
+  {
+    className: "facebook",
+    iconClass: "fab fa-facebook-f",
+    href: "#",
+  },
 ];
 
 export const socialMediaLinks = [

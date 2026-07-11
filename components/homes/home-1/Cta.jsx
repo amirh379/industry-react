@@ -2,6 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { toPersianDigits } from "@/utlis/toPersianDigits";
+import { companyInfo } from "@/data/company";
+
 export default function Cta() {
   return (
     <div
@@ -17,19 +19,20 @@ export default function Cta() {
           >
             <div className="contact-no-area">
               <h2 className="title">
-                شرکتی فعال در حوزه خدمات و نگهداری صنعتی
+                جهت مشاوره برای نیازهای اختصاصی خود، با کارشناسان ما در ارتباط
+                باشید
               </h2>
               <div className="contact-no">
                 <div className="contact-left">
                   <h3 className="no">
                     <i className="sl-call-in" />
-                    {toPersianDigits("021-12345678")}
+                    {toPersianDigits(companyInfo.phone)}
                   </h3>
                 </div>
                 <div className="contact-right">
                   <Link
-                    href={`/contact-4`}
-                    className="site-button appointment-btn btnhover13"
+                    href={`/sales-experts`}
+                    className="site-button appointment-btn"
                   >
                     درخواست وقت مشاوره
                   </Link>
@@ -42,7 +45,7 @@ export default function Cta() {
             data-wow-duration="2s"
             data-wow-delay="0.2s"
           >
-            <Image alt="" src="/images/pic1.png" width="500" height="542" />
+            <Image alt="" src="/images/company/hero-door.jpg" width="500" height="542" />
           </div>
         </div>
       </div>

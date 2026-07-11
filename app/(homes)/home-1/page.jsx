@@ -7,11 +7,10 @@ import Cta from "@/components/homes/home-1/Cta";
 import Facts from "@/components/homes/home-1/Facts";
 import Hero from "@/components/homes/home-1/Hero";
 import Services from "@/components/homes/home-1/Services";
-import Team from "@/components/homes/home-1/Team";
 import Testimonials from "@/components/homes/home-1/Testimonials";
 export const metadata = {
-  title: "خانه || صنعت - قالب کارخانه و صنعتی",
-  description: "صنعت - قالب کارخانه و صنعتی",
+  title: "خانه || ثامن فرفورژه",
+  description: "شرکت صنایع فلزی هشتمین نور - ثامن فرفورژه",
 };
 
 export default function Home1() {
@@ -25,9 +24,8 @@ export default function Home1() {
           <Cta />
           <Services />
           <Facts />
-          <Team />
-          <Testimonials />
           <Blogs />
+          <Testimonials />
           <Clients />
         </div>
         <Footer1 />

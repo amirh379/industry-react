@@ -571,15 +571,88 @@ a {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-  .catalog-btn {
-    border-color: var(--color-primary);
-    color: var(--color-primary);
-    background: transparent;
-    &:hover {
-      color: #fff;
-      background: var(--color-primary);
+}
+
+.topbar-left-with-social {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  .dlab-social-icon {
+    margin-bottom: 0;
+
+    ul {
+      margin-bottom: 0;
+    }
+
+    li a {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      i {
+        line-height: 1;
+      }
+
+      &.telegram {
+        color: #0088cc;
+      }
     }
   }
+}
+
+.catalog-btn {
+  background: #fff !important;
+  color: var(--color-primary) !important;
+  border: none !important;
+
+  &::before,
+  &::after {
+    display: none !important;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: #c9a227 !important;
+    color: #fff !important;
+    border: none !important;
+  }
+}
+
+.hero-section .buttons .catalog-btn {
+  border: none !important;
+}
+
+.contact-action.style2 {
+  .contact-no .no {
+    color: #fff !important;
+  }
+
+  .appointment-btn {
+    background: #fff !important;
+    color: var(--color-primary) !important;
+    border: none !important;
+
+    &::before,
+    &::after {
+      display: none !important;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: #fff !important;
+      color: var(--color-primary) !important;
+      border: none !important;
+    }
+  }
+}
+
+.logo-header img {
+  max-height: 75px;
+  width: auto;
 }
 
 // Catalog download cards (/catalog page)

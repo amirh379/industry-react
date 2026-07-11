@@ -1,6 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { companyInfo } from "@/data/company";
+
 export default function Hero() {
   return (
     <div
@@ -15,14 +17,13 @@ export default function Hero() {
           left: "0%",
           top: 0,
           width: "100%",
-
           transformStyle: "preserve-3d",
           backfaceVisibility: "hidden",
           height: 898,
           width: "100%",
           filter: "none",
         }}
-        src="/images/main-slider/slide8-bg.jpg"
+        src="/images/company/hero-bg.jpg"
         width={1920}
         height={1024}
         priority
@@ -33,18 +34,16 @@ export default function Hero() {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-12">
                 <div className="hero-content">
-                  <h1 className="title">ما راهکار کارخانه‌های صنعتی هستیم</h1>
+                  <h1 className="title">{companyInfo.fullName}</h1>
                   <div className="description">
-                    با بیش از سه دهه تجربه در صنعت، راهکارهای مهندسی و
-                    تولیدی قابل‌اعتماد برای کارخانه‌ها و شرکت‌های صنعتی ارائه
-                    می‌دهیم.
+                    بزرگ‌ترین تولیدکننده و صادرکننده انواع درب‌های لوکس، درب‌های
+                    پیش‌ساخته، نرده حفاظ و قطعات فرفورژه در خاورمیانه.
                   </div>
                   <div className="buttons">
                     <Link href="/shop">محصولات</Link>
-                    {/* <Link href="/catalog">دریافت کاتالوگ</Link> */}
                     <Link
                       href={`/catalog`}
-                      className="site-button outline radius-no btnhover13 catalog-btn"
+                      className="site-button radius-no btnhover13 catalog-btn"
                     >
                       <i className="fas fa-download m-r5" />
                       دریافت کاتالوگ
@@ -54,8 +53,8 @@ export default function Hero() {
               </div>
               <div className="col-lg-6 col-md-12">
                 <Image
-                  alt=""
-                  src="/images/main-slider/slide7-main.png"
+                  alt="محصولات ثامن فرفورژه"
+                  src="/images/company/hero-door.jpg"
                   width="965"
                   height="894"
                 />

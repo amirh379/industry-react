@@ -50,7 +50,7 @@ export default function Catalog() {
                     <a
                       href={item.fileHref}
                       download
-                      className="site-button outline radius-no btnhover13 catalog-download-btn"
+                      className="site-button radius-no btnhover13 catalog-btn catalog-download-btn"
                     >
                       <i className="fas fa-download m-r5" />
                       دانلود
