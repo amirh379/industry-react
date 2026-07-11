@@ -14,7 +14,7 @@ export default function Header1() {
       <div className="top-bar">
         <div className="container">
           <div className="row d-flex justify-content-between align-items-center">
-            <div className="dlab-topbar-left topbar-left-with-social">
+            <div className="dlab-topbar-left">
               <ul>
                 {headerLinks.map((link, index) => (
                   <li key={index}>
@@ -22,19 +22,9 @@ export default function Header1() {
                   </li>
                 ))}
               </ul>
-              <SocialIconList />
             </div>
             <div className="dlab-topbar-right header-topbar-actions">
-              <Link href={`/shop`} className="site-button radius-no btnhover13">
-                محصولات
-              </Link>
-              <Link
-                href={`/catalog`}
-                className="site-button radius-no btnhover13 catalog-btn"
-              >
-                <i className="fas fa-download m-r5" />
-                دریافت کاتالوگ
-              </Link>
+              <SocialIconList />
             </div>
           </div>
         </div>
