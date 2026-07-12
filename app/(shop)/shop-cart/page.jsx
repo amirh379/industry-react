@@ -4,7 +4,6 @@ import Header22 from "@/components/headers/Header22";
 import ShopCart from "@/components/shop/ShopCart";
 import ShopFeatures from "@/components/shop/ShopFeatures";
 import React from "react";
-import Header22 from "@/components/headers/Header22";
 
 export const metadata = {
   title: "سبد خرید || صنعت - قالب فارسی کارخانه و صنعتی",

@@ -1,11 +1,9 @@
-import Footer15 from "@/components/footers/Footer15";
 import Link from "next/link";
 import Footer16 from "@/components/footers/Footer16";
 import Header22 from "@/components/headers/Header22";
 import Register from "@/components/shop/Register";
 import ShopFeatures from "@/components/shop/ShopFeatures";
 import React from "react";
-import Header22 from "@/components/headers/Header22";
 
 export const metadata = {
   title: "ثبت‌نام || صنعت - قالب فارسی کارخانه و صنعتی",
