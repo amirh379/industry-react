@@ -1,6 +1,6 @@
 import Footer15 from "@/components/footers/Footer15";
 import Link from "next/link";
-import Header1 from "@/components/headers/Header1";
+import Header22 from "@/components/headers/Header22";
 import Team from "@/components/homes/home-1/Team";
 import Facts from "@/components/team/Facts";
 import Team2 from "@/components/team/Team2";
@@ -14,7 +14,7 @@ export default function page() {
   return (
     <>
       <div className="page-wraper  ">
-        <Header1 />
+        <Header22 />
         <div className="page-content bg-white">
           <div
             className="dlab-bnr-inr overlay-black-middle bg-pt"

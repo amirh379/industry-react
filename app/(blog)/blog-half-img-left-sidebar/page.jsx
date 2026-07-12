@@ -2,7 +2,7 @@ import Blogs13 from "@/components/blogs/Blogs13";
 import Link from "next/link";
 import Blogs9 from "@/components/blogs/Blogs9";
 import Footer15 from "@/components/footers/Footer15";
-import Header1 from "@/components/headers/Header1";
+import Header22 from "@/components/headers/Header22";
 import React from "react";
 
 export const metadata = {
@@ -14,7 +14,7 @@ export default function page() {
   return (
     <>
       <div className="page-wraper  ">
-        <Header1 />
+        <Header22 />
         <div className="page-content bg-white">
           {" "}
           <div

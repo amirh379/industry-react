@@ -5,7 +5,7 @@ export const footerLinks = [
   { href: "/privacy-policy", label: "حریم خصوصی" },
   { href: "/portfolio-grid-2", label: "پروژه‌ها" },
   { href: "/help-desk", label: "مرکز پشتیبانی" },
-  { href: "/shop", label: "فروشگاه" },
+  { href: "/shop-sidebar", label: "فروشگاه" },
   { href: "/contact-1", label: "تماس با ما" },
 ];
 
@@ -16,7 +16,7 @@ export const footerLinks2 = [
   { href: "/privacy-policy", label: "حریم خصوصی" },
   { href: "/portfolio-grid-2", label: "پروژه‌ها" },
   { href: "/help-desk", label: "مرکز پشتیبانی" },
-  { href: "/shop", label: "فروشگاه" },
+  { href: "/shop-sidebar", label: "فروشگاه" },
   { href: "/contact-1", label: "تماس با ما" },
   { href: "/portfolio-grid-2", label: "نمونه‌کارها" },
   { href: "/team-1", label: "تیم" },

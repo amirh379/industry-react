@@ -2,11 +2,14 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+
 export default function Nav() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState("");
   const aboutLinks = [
     { href: "/about-1", label: "درباره ما" },
+    { href: "/board-of-directors", label: "هیئت مدیره" },
+    { href: "/factories", label: "کارخانه‌ها" },
     { href: "/shortcode-testimonials", label: "مشتریان" },
   ];
   const isRouteActive = (href) => {
@@ -23,8 +26,11 @@ export default function Nav() {
           خانه
         </Link>
       </li>
-      <li className={isRouteActive("/shop") ? "active" : ""}>
-        <Link className={isRouteActive("/shop") ? "menuActive" : ""} href={`/shop`}>
+      <li className={isRouteActive("/shop-sidebar") ? "active" : ""}>
+        <Link
+          className={isRouteActive("/shop-sidebar") ? "menuActive" : ""}
+          href={`/shop-sidebar`}
+        >
           محصولات
         </Link>
       </li>
@@ -60,7 +66,9 @@ export default function Nav() {
           شعب
         </Link>
       </li>
-      <li className={`${isAboutActive ? "active" : ""} ${menuOpen === "about" ? "open" : ""}`}>
+      <li
+        className={`${isAboutActive ? "active" : ""} ${menuOpen === "about" ? "open" : ""}`}
+      >
         <a onClick={() => setMenuOpen((pre) => (pre === "about" ? "" : "about"))}>
           درباره ما
           <i className="fas fa-chevron-down" />

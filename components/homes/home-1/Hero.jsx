@@ -40,7 +40,7 @@ export default function Hero() {
                     پیش‌ساخته، نرده حفاظ و قطعات فرفورژه در خاورمیانه.
                   </div>
                   <div className="buttons">
-                    <Link href="/shop" className="site-button radius-no btnhover13 catalog-btn">محصولات</Link>
+                    <Link href="/shop-sidebar" className="site-button radius-no btnhover13 catalog-btn">محصولات</Link>
                     <Link
                       href={`/catalog`}
                       className="site-button radius-no btnhover13 catalog-btn"

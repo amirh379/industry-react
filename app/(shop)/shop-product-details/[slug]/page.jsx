@@ -1,11 +1,10 @@
 import Link from "next/link";
 import Footer16 from "@/components/footers/Footer16";
-import Header1 from "@/components/headers/Header1";
+import Header22 from "@/components/headers/Header22";
 import ShopDetails from "@/components/shop/ShopDetails";
 import ShopFeatures from "@/components/shop/ShopFeatures";
 import React from "react";
 import { products } from "@/data/products";
-import Header22 from "@/components/headers/Header22";
 
 export const metadata = {
   title: "جزئیات محصول || صنعت - قالب فارسی کارخانه و صنعتی",

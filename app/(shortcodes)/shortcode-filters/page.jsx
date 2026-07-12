@@ -1,5 +1,5 @@
 import Footer15 from "@/components/footers/Footer15";
-import Header1 from "@/components/headers/Header1";
+import Header22 from "@/components/headers/Header22";
 import Filters from "@/components/shortcodes/Filters";
 import React from "react";
 
@@ -12,7 +12,7 @@ export default function page() {
   return (
     <>
       <div className="page-wraper  ">
-        <Header1 />
+        <Header22 />
         <div className="page-content bg-white">
           <Filters />
         </div>

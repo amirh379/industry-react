@@ -1,6 +1,6 @@
 import Footer15 from "@/components/footers/Footer15";
 import Link from "next/link";
-import Header1 from "@/components/headers/Header1";
+import Header22 from "@/components/headers/Header22";
 import ProjectDetails from "@/components/portfolio/ProjectDetails";
 import React from "react";
 import { allProjects } from "@/data/projects";
@@ -17,7 +17,7 @@ export default function page({ params }) {
   return (
     <>
       <div className="page-wraper  ">
-        <Header1 />
+        <Header22 />
         <div className="page-content bg-white">
           <div
             className="dlab-bnr-inr overlay-black-middle bg-pt"

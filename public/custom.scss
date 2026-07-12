@@ -602,6 +602,31 @@ a {
   }
 }
 
+.header-social-icons {
+  .header-social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border: none;
+    background: transparent;
+    transition: opacity 0.2s ease;
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    img {
+      width: 22px;
+      height: 22px;
+      object-fit: contain;
+      display: block;
+    }
+  }
+}
+
 .catalog-btn {
   background: #fff !important;
   color: var(--color-primary) !important;
@@ -655,6 +680,31 @@ a {
   width: auto;
 }
 
+.site-footer.style1 {
+  .footer-top {
+    .footer-title {
+      color: #fff;
+
+      &:after {
+        background: #fff;
+      }
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    .widget_about a.readmore,
+    .widget_about a {
+      color: #fff !important;
+    }
+
+    .list-2 li a {
+      color: #fff !important;
+    }
+  }
+}
+
 // Catalog download cards (/catalog page)
 .catalog-card {
   padding: 40px 25px;
@@ -667,6 +717,18 @@ a {
     font-size: 46px;
     margin-bottom: 20px;
   }
+  .catalog-card-image {
+    margin: -40px -25px 20px;
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+
+    img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+  }
   .catalog-card-size {
     display: block;
     font-size: 13px;
@@ -675,6 +737,44 @@ a {
   }
   .catalog-download-btn {
     display: inline-block;
+  }
+}
+
+// Board of directors page (/board-of-directors)
+.board-member-card {
+  overflow: hidden;
+  height: 100%;
+
+  .board-member-media {
+    img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  .board-member-info {
+    padding: 22px 20px 25px;
+    text-align: center;
+
+    .dlab-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .dlab-position {
+      color: var(--color-primary);
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      color: #666;
+    }
   }
 }
 

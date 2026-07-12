@@ -1,6 +1,6 @@
 import Blogs2 from "@/components/blogs/Blogs2";
 import Footer15 from "@/components/footers/Footer15";
-import Header1 from "@/components/headers/Header1";
+import Header22 from "@/components/headers/Header22";
 import React from "react";
 import Link from "next/link";
 export const metadata = {
@@ -12,7 +12,7 @@ export default function page() {
   return (
     <>
       <div className="page-wraper  ">
-        <Header1 />
+        <Header22 />
         <div className="page-content bg-white">
           <div
             className="dlab-bnr-inr overlay-black-middle bg-pt"

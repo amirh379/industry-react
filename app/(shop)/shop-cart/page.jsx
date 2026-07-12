@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Footer16 from "@/components/footers/Footer16";
-import Header1 from "@/components/headers/Header1";
+import Header22 from "@/components/headers/Header22";
 import ShopCart from "@/components/shop/ShopCart";
 import ShopFeatures from "@/components/shop/ShopFeatures";
 import React from "react";

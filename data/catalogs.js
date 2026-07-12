@@ -1,35 +1,33 @@
-// Placeholder catalog entries. Replace `fileHref` with the real catalog PDF
-// paths (e.g. under /public/files/catalogs) once the actual files are ready.
 export const catalogs = [
   {
     id: 1,
-    title: "کاتالوگ عمومی محصولات",
-    description:
-      "معرفی کامل خط تولید و محصولات صنعتی شرکت به همراه مشخصات فنی و کاربردها.",
-    fileHref: "/files/catalogs/general-catalog.pdf",
-    fileSize: "۸.۲ مگابایت",
-  },
-  {
-    id: 2,
-    title: "کاتالوگ تجهیزات مکانیکی",
-    description:
-      "مشخصات فنی، استانداردها و کاربردهای تجهیزات و ماشین‌آلات مکانیکی.",
-    fileHref: "/files/catalogs/mechanical-equipment.pdf",
-    fileSize: "۵.۶ مگابایت",
-  },
-  {
-    id: 3,
-    title: "کاتالوگ قطعات یدکی",
-    description:
-      "فهرست کامل قطعات یدکی موجود به همراه کد فنی و مشخصات هر قطعه.",
+    title: "کاتالوگ قطعات",
+    description: "معرفی کامل انواع قطعات فرفورژه و مشخصات فنی محصولات.",
+    imageSrc: "/images/company/hero-door.jpg",
     fileHref: "/files/catalogs/spare-parts.pdf",
     fileSize: "۳.۴ مگابایت",
   },
   {
+    id: 2,
+    title: "کاتالوگ درب‌های لوکس و سفارشی",
+    description: "نمونه‌کارها و مشخصات درب‌های لوکس و سفارشی ثامن فرفورژه.",
+    imageSrc: "/images/company/hero-bg.jpg",
+    fileHref: "/files/catalogs/general-catalog.pdf",
+    fileSize: "۸.۲ مگابایت",
+  },
+  {
+    id: 3,
+    title: "کاتالوگ درب‌های پیش‌ساخته",
+    description: "فهرست درب‌های پیش‌ساخته آماده نصب به همراه ابعاد و جزئیات.",
+    imageSrc: "/images/company/hero-door.jpg",
+    fileHref: "/files/catalogs/mechanical-equipment.pdf",
+    fileSize: "۵.۶ مگابایت",
+  },
+  {
     id: 4,
-    title: "کاتالوگ راهکارهای صادراتی",
-    description:
-      "معرفی خدمات، گواهینامه‌ها و راهکارهای صادراتی ویژه مشتریان بین‌المللی.",
+    title: "کاتالوگ محصولات دیزاین باغی ویلایی",
+    description: "محصولات تزئینی و کاربردی برای فضای باغ و ویلا.",
+    imageSrc: "/images/company/hero-bg.jpg",
     fileHref: "/files/catalogs/export-solutions.pdf",
     fileSize: "۴.۱ مگابایت",
   },

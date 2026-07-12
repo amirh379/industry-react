@@ -5,7 +5,7 @@ export const samenProducts = [
     imageSrc: "/images/company/hero-door.jpg",
     description:
       "تولید و عرضه انواع قطعات فرفورژه با کیفیت بالا برای پروژه‌های ساختمانی و صنعتی.",
-    href: "/shop",
+    href: "/shop-sidebar",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const samenProducts = [
     imageSrc: "/images/company/hero-bg.jpg",
     description:
       "طراحی و ساخت درب‌های لوکس و سفارشی متناسب با سلیقه و معماری پروژه شما.",
-    href: "/shop",
+    href: "/shop-sidebar",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const samenProducts = [
     imageSrc: "/images/company/hero-door.jpg",
     description:
       "درب‌های پیش‌ساخته آماده نصب با دوام و ظاهر حرفه‌ای برای انواع ساختمان‌ها.",
-    href: "/shop",
+    href: "/shop-sidebar",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const samenProducts = [
     imageSrc: "/images/company/hero-bg.jpg",
     description:
       "محصولات تزئینی و کاربردی برای فضای باغ و ویلا با طراحی منحصربه‌فرد.",
-    href: "/shop",
+    href: "/shop-sidebar",
   },
   {
     id: 5,

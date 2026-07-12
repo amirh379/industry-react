@@ -1,5 +1,5 @@
 import Footer15 from "@/components/footers/Footer15";
-import Header1 from "@/components/headers/Header1";
+import Header22 from "@/components/headers/Header22";
 import React from "react";
 import { toPersianDigits } from "@/utlis/toPersianDigits";
 
@@ -11,7 +11,7 @@ export default function page() {
   return (
     <>
       <div className="page-wraper  ">
-        <Header1 />
+        <Header22 />
         <div className="page-content">
           <div
             className="section-full dz_error-405 content-inner overlay-black-dark"

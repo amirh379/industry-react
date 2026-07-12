@@ -20,7 +20,7 @@ export default function Facts() {
               data-wow-delay="0.2s"
             >
               <div className="section-head text-white">
-                <a
+                {/* <a
                   onClick={() => setOpen(true)}
                   className="popup-youtube video play-btn"
                 >
@@ -28,7 +28,7 @@ export default function Facts() {
                     <i className="fas fa-play" />
                   </span>
                   پخش ویدیو
-                </a>
+                </a> */}
                 <h2 className="title">
                   در حال رشد و ساخت محصولاتی بهتر هستیم
                 </h2>
