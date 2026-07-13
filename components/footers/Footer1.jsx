@@ -13,7 +13,7 @@ export default function Footer1() {
 
   return (
     <footer className="site-footer style1">
-      <div className="dlab-newsletter">
+      {/* <div className="dlab-newsletter">
         <div className="container">
           <div className="ft-contact">
             <div className="ft-contact-bx">
@@ -50,7 +50,7 @@ export default function Footer1() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div
         className="footer-top"
         style={{
