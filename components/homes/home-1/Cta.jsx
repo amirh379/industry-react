@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { toPersianDigits } from "@/utlis/toPersianDigits";
 import { companyInfo } from "@/data/company";
 
@@ -12,11 +11,7 @@ export default function Cta() {
     >
       <div className="container">
         <div className="row relative">
-          <div
-            className="col-md-12 col-lg-8 wow fadeInLeft"
-            data-wow-duration="2s"
-            data-wow-delay="0.2s"
-          >
+          <div className="col-md-12">
             <div className="contact-no-area">
               <h2 className="title">
                 جهت مشاوره برای نیازهای اختصاصی خود، با کارشناسان ما در ارتباط
@@ -30,22 +25,12 @@ export default function Cta() {
                   </h3>
                 </div>
                 <div className="contact-right">
-                  <Link
-                    href={`/sales-experts`}
-                    className="site-button appointment-btn"
-                  >
-                    درخواست وقت مشاوره
+                  <Link href={`/contact-1`} className="site-button appointment-btn">
+                    درخواست مشاوره
                   </Link>
                 </div>
               </div>
             </div>
-          </div>
-          <div
-            className="col-md-12 col-lg-4 contact-img-bx wow fadeInRight relative"
-            data-wow-duration="2s"
-            data-wow-delay="0.2s"
-          >
-            <Image alt="" src="/images/company/hero-door.jpg" width="500" height="542" />
           </div>
         </div>
       </div>

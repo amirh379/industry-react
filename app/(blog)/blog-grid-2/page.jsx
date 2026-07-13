@@ -1,5 +1,5 @@
+import Footer1 from "@/components/footers/Footer1";
 import Blog1 from "@/components/blogs/Blog1";
-import Footer15 from "@/components/footers/Footer15";
 import Header22 from "@/components/headers/Header22";
 import Link from "next/link";
 import React from "react";
@@ -39,7 +39,7 @@ export default function page() {
             <Blog1 />
           </div>
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

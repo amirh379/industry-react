@@ -1,12 +1,21 @@
 export const footerLinks = [
-  { href: "/about-1", label: "درباره ما" },
-  { href: "/blog-grid-2", label: "بلاگ" },
-  { href: "/services-1", label: "خدمات" },
-  { href: "/privacy-policy", label: "حریم خصوصی" },
-  { href: "/portfolio-grid-2", label: "پروژه‌ها" },
-  { href: "/help-desk", label: "مرکز پشتیبانی" },
-  { href: "/shop-sidebar", label: "فروشگاه" },
+  { href: "/shop-sidebar", label: "محصولات" },
+  { href: "/representatives", label: "نمایندگی ها" },
+  { href: "/sales-experts", label: "کارشناس های فروش" },
+  { href: "/contact-1", label: "مشاوره" },
+  { href: "/about-1", label: "درباره ثامن فرفوژه" },
   { href: "/contact-1", label: "تماس با ما" },
+  { href: "/portfolio-grid-3", label: "پروژه ها" },
+  { href: "/catalog", label: "دریافت کاتالوگ" },  
+  
+  // { href: "/about-1", label: "درباره ما" },
+  // { href: "/blog-grid-2", label: "بلاگ" },
+  // { href: "/services-1", label: "خدمات" },
+  // { href: "/privacy-policy", label: "حریم خصوصی" },
+  // { href: "/portfolio-grid-2", label: "پروژه‌ها" },
+  // { href: "/help-desk", label: "مرکز پشتیبانی" },
+  // { href: "/shop-sidebar", label: "فروشگاه" },
+  // { href: "/contact-1", label: "تماس با ما" },
 ];
 
 export const footerLinks2 = [

@@ -3,39 +3,42 @@
 import React from "react";
 import Nav from "./component/Nav";
 import Link from "next/link";
-import { headerLinks } from "@/data/headerLinks";
-import { companyLogo } from "@/data/company";
+import { headerTopPhone } from "@/data/headerLinks";
+import { companyLogo, companyInfo } from "@/data/company";
 import SocialIconList from "./component/SocialIconList";
 import { toggleMobileMenu } from "@/utlis/toggleMobileMenu";
+import { toPersianDigits } from "@/utlis/toPersianDigits";
 
 export default function Header22() {
+  const telHref = companyInfo.phone.replace(/-/g, "");
+
   return (
-    <header className="site-header mo-left header">
+    <header className="site-header mo-left header header22">
       <div className="top-bar">
         <div className="container">
           <div className="row d-flex justify-content-between align-items-center">
             <div className="dlab-topbar-left topbar-left-with-social">
-              <ul>
-                {headerLinks.map((link, index) => (
-                  <li key={index}>
-                    <Link href={link.href}>{link.label}</Link>
-                  </li>
-                ))}
-              </ul>
+              <a href={`tel:${telHref}`} className="topbar-phone-link">
+                <i className="fas fa-phone-alt" />
+                {toPersianDigits(headerTopPhone)}
+              </a>
+              <Link href="/help-desk" className="topbar-support-link">
+                مرکز پشتیبانی
+              </Link>
               <SocialIconList />
             </div>
             <div className="dlab-topbar-right header-topbar-actions">
               <Link
                 href={`/price-list`}
-                className="site-button radius-no btnhover13"
+                className="site-button radius-no btnhover13 topbar-action-btn price-list-btn-topbar"
               >
                 لیست قیمت
               </Link>
               <Link
                 href={`/catalog`}
-                className="site-button radius-no btnhover13 catalog-btn"
+                className="site-button radius-no btnhover13 catalog-btn catalog-btn-topbar topbar-action-btn"
               >
-                <i className="fas fa-download m-r5" />
+                <i className="fas fa-download catalog-btn-icon" />
                 دریافت کاتالوگ
               </Link>
             </div>
@@ -68,15 +71,9 @@ export default function Header22() {
               className="header-nav navbar-collapse collapse justify-content-end"
               id="navbarNavDropdown"
             >
-              <div className="logo-header d-md-block d-lg-none">
-                <Link href={`/`}>
-                  <img alt="ثامن فرفورژه" width="258" height="75" src={companyLogo} />
-                </Link>
-              </div>
               <ul className="nav navbar-nav">
                 <Nav />
               </ul>
-              <SocialIconList />
             </div>
           </div>
         </div>

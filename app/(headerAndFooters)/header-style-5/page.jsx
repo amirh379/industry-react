@@ -1,5 +1,5 @@
+import Footer1 from "@/components/footers/Footer1";
 import CopyContainer from "@/components/common/CopyContainer";
-import Footer15 from "@/components/footers/Footer15";
 import Header20 from "@/components/headers/Header20";
 import Image from "next/image";
 import Link from "next/link";
@@ -192,7 +192,7 @@ export default function Header20() &lbrace;
           {/* contact area END */}
         </div>
 
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

@@ -40,3 +40,5 @@ export const samenProducts = [
     href: "/portfolio-grid-3",
   },
 ];
+
+export const shopProducts = samenProducts.slice(0, 4);

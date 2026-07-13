@@ -1,7 +1,7 @@
+import Footer1 from "@/components/footers/Footer1";
 import Blogs10 from "@/components/blogs/Blogs10";
 import Link from "next/link";
 import Blogs12 from "@/components/blogs/Blogs12";
-import Footer15 from "@/components/footers/Footer15";
 import Header22 from "@/components/headers/Header22";
 import React from "react";
 
@@ -41,7 +41,7 @@ export default function page() {
             <Blogs12 />
           </div>
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

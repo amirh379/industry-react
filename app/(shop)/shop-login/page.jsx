@@ -1,5 +1,5 @@
+import Footer1 from "@/components/footers/Footer1";
 import Link from "next/link";
-import Footer16 from "@/components/footers/Footer16";
 import Header22 from "@/components/headers/Header22";
 import Login from "@/components/shop/Login";
 import ShopFeatures from "@/components/shop/ShopFeatures";
@@ -39,7 +39,7 @@ export default function page() {
 
           <ShopFeatures />
         </div>
-        <Footer16 />
+        <Footer1 />
       </div>
     </>
   );

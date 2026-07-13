@@ -1,8 +1,8 @@
+import Footer1 from "@/components/footers/Footer1";
 import BlogSingle from "@/components/blogs/BlogSingle";
 import Link from "next/link";
 import Comment from "@/components/blogs/Comment";
 import Sidebar from "@/components/blogs/Sidebar";
-import Footer15 from "@/components/footers/Footer15";
 import Header22 from "@/components/headers/Header22";
 import React from "react";
 import { allBlogs } from "@/data/blogs";
@@ -61,7 +61,7 @@ export default function page({ params }) {
             </div>
           </div>
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

@@ -1,5 +1,5 @@
+import Footer1 from "@/components/footers/Footer1";
 import Contact3 from "@/components/contact/Contact3";
-import Footer15 from "@/components/footers/Footer15";
 import Header22 from "@/components/headers/Header22";
 import React from "react";
 
@@ -15,7 +15,7 @@ export default function page() {
         <div className="page-content bg-white">
           <Contact3 />
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

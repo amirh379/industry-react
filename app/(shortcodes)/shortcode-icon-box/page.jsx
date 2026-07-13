@@ -1,4 +1,4 @@
-import Footer15 from "@/components/footers/Footer15";
+import Footer1 from "@/components/footers/Footer1";
 import Header22 from "@/components/headers/Header22";
 import IconBox from "@/components/shortcodes/IconBox";
 import React from "react";
@@ -16,7 +16,7 @@ export default function page() {
         <div className="page-content bg-white">
           <IconBox />
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

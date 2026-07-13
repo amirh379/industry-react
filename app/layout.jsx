@@ -22,6 +22,7 @@ import "react-modal-video/scss/modal-video.scss";
 import { usePathname } from "next/navigation";
 import Context from "@/context/Context";
 import ThemeChanger from "@/components/common/ThemeChanger";
+import PageLoader from "@/components/common/PageLoader";
 import "rc-slider/assets/index.css";
 import "../public/rtl.scss";
 import ScrollTop from "@/components/common/ScrollTop";
@@ -119,7 +120,7 @@ export default function RootLayout({ children }) {
       </head>
       <body id="bg" className={vazirmatn.className}>
         {" "}
-        <div id="loading-area"></div>
+        <PageLoader />
         <Context>
           {showChild ? (
             <>

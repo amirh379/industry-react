@@ -1,16 +1,12 @@
-import About from "@/components/about/About";
+import Footer1 from "@/components/footers/Footer1";
+import About from "@/components/about/CompanyIntro";
 import Banner from "@/components/about/Banner";
-import Facts from "@/components/common/Facts";
-import Pricing from "@/components/about/Pricing";
-import Testimonials from "@/components/common/Testimonials2";
-import Footer15 from "@/components/footers/Footer15";
 import Header22 from "@/components/headers/Header22";
-import Team from "@/components/homes/home-1/Team";
 import React from "react";
 
 export const metadata = {
-  title: "درباره ما || صنعت - قالب کارخانه و صنعتی",
-  description: "صنعت - قالب کارخانه و صنعتی",
+  title: "درباره ما || ثامن فرفورژه",
+  description: "معرفی شرکت ثامن فرفورژه",
 };
 export default function page() {
   return (
@@ -20,12 +16,8 @@ export default function page() {
         <div className="page-content bg-white">
           <Banner />
           <About />
-          <Facts />
-          <Team />
-          <Pricing />
-          <Testimonials />
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

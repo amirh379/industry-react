@@ -20,18 +20,14 @@ export default function ThemeChanger() {
 
   useEffect(() => {
     setTimeout(() => {
-      currentSkins.logoSelector.forEach((elm, i) => {
-        document.querySelectorAll(elm).forEach((el, i2) => {
-          if (el.src) {
-            el.setAttribute("src", currentSkins.logoImage[i]);
-          }
-        });
-      });
       document.body.setAttribute(
         "data-theme-color",
         `${currentSkins.colorTheme}`
       );
-      document.getElementById("loading-area").style.display = "none";
+      const loader = document.getElementById("loading-area");
+      if (loader) {
+        loader.style.display = "none";
+      }
     });
   }, [currentSkins, pathname]);
   useEffect(() => {

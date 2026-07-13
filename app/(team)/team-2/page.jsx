@@ -1,4 +1,4 @@
-import Footer15 from "@/components/footers/Footer15";
+import Footer1 from "@/components/footers/Footer1";
 import Link from "next/link";
 import Header22 from "@/components/headers/Header22";
 import Team from "@/components/homes/home-1/Team";
@@ -43,7 +43,7 @@ export default function page() {
             <Team2 />
           </div>
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

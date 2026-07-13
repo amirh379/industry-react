@@ -1,5 +1,5 @@
+import Footer1 from "@/components/footers/Footer1";
 import CopyContainer from "@/components/common/CopyContainer";
-import Footer15 from "@/components/footers/Footer15";
 import Footer20 from "@/components/footers/Footer20";
 import Header22 from "@/components/headers/Header22";
 import React from "react";

@@ -10,7 +10,7 @@ export default function Nav() {
     { href: "/about-1", label: "درباره ما" },
     { href: "/board-of-directors", label: "هیئت مدیره" },
     { href: "/factories", label: "کارخانه‌ها" },
-    { href: "/shortcode-testimonials", label: "مشتریان" },
+    { href: "/sales-experts", label: "کارشناسان فروش" },
   ];
   const isRouteActive = (href) => {
     const currentSegment = pathname.split("/")[1];
@@ -34,14 +34,6 @@ export default function Nav() {
           محصولات
         </Link>
       </li>
-      <li className={isRouteActive("/team-1") ? "active" : ""}>
-        <Link
-          className={isRouteActive("/team-1") ? "menuActive" : ""}
-          href={`/team-1`}
-        >
-          تولیدکننده
-        </Link>
-      </li>
       <li className={isRouteActive("/portfolio-grid-3") ? "active" : ""}>
         <Link
           className={isRouteActive("/portfolio-grid-3") ? "menuActive" : ""}
@@ -58,12 +50,12 @@ export default function Nav() {
           بلاگ‌ها
         </Link>
       </li>
-      <li className={isRouteActive("/contact-1") ? "active" : ""}>
+      <li className={isRouteActive("/representatives") ? "active" : ""}>
         <Link
-          className={isRouteActive("/contact-1") ? "menuActive" : ""}
-          href={`/contact-1`}
+          className={isRouteActive("/representatives") ? "menuActive" : ""}
+          href={`/representatives`}
         >
-          شعب
+          نمایندگی‌ها
         </Link>
       </li>
       <li

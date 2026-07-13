@@ -21,7 +21,7 @@ export default function Services() {
                 data-wow-duration="2s"
                 data-wow-delay={service.delay}
               >
-                <div className="icon-bx-wraper" data-name={service.name}>
+                <div className="icon-bx-wraper">
                   <div className="icon-lg">
                     <a href="#" className="icon-cell">
                       <i className={service.icon} />

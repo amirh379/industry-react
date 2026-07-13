@@ -1,8 +1,8 @@
+import Footer1 from "@/components/footers/Footer1";
 import About2 from "@/components/about/About2";
 import Banner from "@/components/about/Banner";
 import Progress from "@/components/about/Progress";
 
-import Footer15 from "@/components/footers/Footer15";
 import Header22 from "@/components/headers/Header22";
 import Services from "@/components/homes/home-1/Services";
 import About from "@/components/homes/home-3/About";
@@ -24,7 +24,7 @@ export default function page() {
           <Services />
           <Progress />
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

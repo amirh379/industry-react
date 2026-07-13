@@ -1,8 +1,7 @@
-import ClientSlider from "@/components/common/ClientSlider";
-import Link from "next/link";
-import Footer15 from "@/components/footers/Footer15";
+import Footer1 from "@/components/footers/Footer1";
 import Header22 from "@/components/headers/Header22";
 import Team1 from "@/components/team/Team1";
+import Link from "next/link";
 import React from "react";
 
 export const metadata = {
@@ -38,14 +37,9 @@ export default function page() {
 
           <div className="content-block">
             <Team1 />
-            <div className="section-full content-inner bg-gray">
-              <div className="container overflow-hidden">
-                <ClientSlider />
-              </div>
-            </div>
           </div>
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

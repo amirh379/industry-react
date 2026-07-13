@@ -25,6 +25,38 @@ export default function BoardOfDirectors() {
         </div>
       </div>
       <div className="content-block">
+        <div className="section-full content-inner bg-white">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-5 m-b30">
+                <Image
+                  alt="مدیرعامل ثامن فرفورژه"
+                  src="/images/company/hero-door.jpg"
+                  width={500}
+                  height={420}
+                  style={{ objectFit: "cover", borderRadius: "6px", width: "100%" }}
+                />
+              </div>
+              <div className="col-lg-7 m-b30">
+                <div className="ceo-message-box">
+                  <h2 className="title m-b15">پیام مدیرعامل</h2>
+                  <p className="m-b20">
+                    ما در ثامن فرفورژه باور داریم کیفیت پایدار، نوآوری در طراحی
+                    و تعهد به مشتری، پایه‌های موفقیت بلندمدت هر مجموعه صنعتی
+                    است. هدف ما ارائه محصولاتی است که علاوه بر زیبایی، امنیت و
+                    دوام ساختمان‌های شما را تضمین کند.
+                  </p>
+                  <p className="m-b20">
+                    با تکیه بر تجربه تیم متخصص و ظرفیت تولید گسترده، آماده
+                    همکاری در پروژه‌های سفارشی، ویلایی و صنعتی هستیم.
+                  </p>
+                  <h4 className="m-b0">مدیریت ثامن فرفورژه</h4>
+                  <span className="font-14">مدیرعامل شرکت</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="section-full content-inner bg-gray">
           <div className="container">
             <div className="section-head text-center">

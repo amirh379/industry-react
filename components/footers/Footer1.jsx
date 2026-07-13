@@ -5,17 +5,17 @@ import Image from "next/image";
 import Link from "next/link";
 import { footerLinks } from "@/data/footerLinks";
 import { companyInfo } from "@/data/company";
+import { footerSocialLinks } from "@/data/socials";
+import { toPersianDigits } from "@/utlis/toPersianDigits";
+
 export default function Footer1() {
+  const telHref = companyInfo.phone.replace(/-/g, "");
+
   return (
     <footer className="site-footer style1">
-      {/* newsletter part */}
       <div className="dlab-newsletter">
         <div className="container">
-          <div
-            className="ft-contact wow fadeIn"
-            data-wow-duration="2s"
-            data-wow-delay="0.6s"
-          >
+          <div className="ft-contact">
             <div className="ft-contact-bx">
               <Image
                 alt=""
@@ -34,7 +34,9 @@ export default function Footer1() {
                 height="55"
               />
               <h4 className="title">تلفن</h4>
-              <p>{"۰۲۱-۸۹۰۱۲۳۴۵"}</p>
+              <p>
+                <a href={`tel:${telHref}`}>{toPersianDigits(companyInfo.phone)}</a>
+              </p>
             </div>
             <div className="ft-contact-bx">
               <Image
@@ -49,7 +51,6 @@ export default function Footer1() {
           </div>
         </div>
       </div>
-      {/* footer top part */}
       <div
         className="footer-top"
         style={{
@@ -66,14 +67,11 @@ export default function Footer1() {
                   {companyInfo.fullName}؛ بزرگ‌ترین تولیدکننده و صادرکننده انواع
                   درب‌های لوکس، درب‌های پیش‌ساخته و قطعات فرفورژه در خاورمیانه.
                 </p>
-                <Link href={`/about-1`} className="readmore">
-                  ادامه مطلب
-                </Link>
               </div>
             </div>
             <div className="col-md-4 col-sm-12">
               <div className="widget">
-                <h4 className="footer-title">لینک‌های مفید</h4>
+                <h4 className="footer-title">پیوندها</h4>
                 <ul className="list-2">
                   {footerLinks.map((link, index) => (
                     <li key={index}>
@@ -85,36 +83,33 @@ export default function Footer1() {
             </div>
             <div className="col-md-4 col-sm-12">
               <div className="widget widget_subscribe">
-                <h4 className="footer-title">خبرنامه</h4>
-                <p>
-                  اگر سوالی دارید، در خبرنامه ما عضو شوید تا از آخرین محصولات
-                  ما مطلع شوید.
-                </p>
-                {/* <form
-                  className="dzSubscribe"
-                  onSubmit={(e) => e.preventDefault()}
-                >
-                  <div className="dzSubscribeMsg" />
-                  <div className="form-group">
-                    <div className="input-group">
-                      <input
-                        name="dzEmail"
-                        required="required"
-                        type="email"
-                        className="form-control"
-                        placeholder="ایمیل خود را وارد کنید"
-                      />
-                      <div className="input-group-addon">
-                        <button
-                          name="submit"
-                          value="Submit"
-                          type="submit"
-                          className="site-button far fa-paper-plane"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </form> */}
+                <h4 className="footer-title">
+                  {companyInfo.name} در شبکه‌های اجتماعی
+                </h4>
+                <ul className="footer-social-icons">
+                  {footerSocialLinks.map((social) => (
+                    <li key={social.className}>
+                      <a
+                        href={social.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={social.ariaLabel}
+                        className={`footer-social-link ${social.className}`}
+                      >
+                        {social.iconSrc ? (
+                          <Image
+                            src={social.iconSrc}
+                            alt={social.ariaLabel}
+                            width={24}
+                            height={24}
+                          />
+                        ) : (
+                          <i className={social.iconClass} />
+                        )}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
           </div>

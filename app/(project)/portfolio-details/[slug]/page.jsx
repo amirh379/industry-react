@@ -1,4 +1,4 @@
-import Footer15 from "@/components/footers/Footer15";
+import Footer1 from "@/components/footers/Footer1";
 import Link from "next/link";
 import Header22 from "@/components/headers/Header22";
 import ProjectDetails from "@/components/portfolio/ProjectDetails";
@@ -45,7 +45,7 @@ export default function page({ params }) {
             <ProjectDetails projectItem={projectItem} />
           </div>
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

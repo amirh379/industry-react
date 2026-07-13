@@ -10,7 +10,7 @@ import Services from "@/components/homes/home-1/Services";
 import Testimonials from "@/components/homes/home-1/Testimonials";
 export const metadata = {
   title: "خانه || ثامن فرفورژه",
-  description: "شرکت صنایع فلزی هشتمین نور - ثامن فرفورژه",
+  description: "شرکت صنایع فلزی - ثامن فرفورژه",
 };
 
 export default function Home1() {

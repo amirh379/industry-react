@@ -1,5 +1,5 @@
+import Footer1 from "@/components/footers/Footer1";
 import CopyContainer from "@/components/common/CopyContainer";
-import Footer15 from "@/components/footers/Footer15";
 
 import Header21 from "@/components/headers/Header21";
 import React from "react";
@@ -213,7 +213,7 @@ export default function Header21() &lbrace;
           {/* contact area END */}
         </div>
 
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

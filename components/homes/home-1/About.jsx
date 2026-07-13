@@ -1,4 +1,5 @@
 "use client";
+
 import { samenProducts } from "@/data/samenProducts";
 import React from "react";
 import Image from "next/image";
@@ -11,24 +12,21 @@ export default function About() {
     <div className="section-full bg-gray content-inner about-carousel-ser">
       <div className="container">
         <div className="section-head text-center">
-          <h2 className="title">
-            محصولات <span className="text-primary">ثامن فرفورژه</span>
-          </h2>
+          <h2 className="title">محصولات ثامن فرفورژه</h2>
           <p>
             طیف کامل محصولات فرفورژه، درب‌های لوکس و سفارشی، و راهکارهای
             تخصصی برای پروژه‌های ساختمانی و ویلایی.
           </p>
         </div>
         <Swiper
-          initialSlide={0}
           loop
-          slidesPerGroupAuto
           spaceBetween={30}
           watchSlidesProgress
           autoplay={{
             delay: 4000,
+            disableOnInteraction: false,
           }}
-          speed={2500}
+          speed={800}
           modules={[Autoplay]}
           breakpoints={{
             0: {
@@ -44,22 +42,19 @@ export default function About() {
               slidesPerView: 3,
             },
           }}
-          className="about-ser-carousel owl-overflow-visible owl-carousel owl-theme owl-btn-center-lr owl-dots-primary-full owl-btn-3 m-b30 wow fadeIn"
-          data-wow-duration="2s"
-          data-wow-delay="0.2s"
-          style={{ overflow: "visible" }}
+          className="about-ser-carousel owl-overflow-visible owl-carousel owl-theme owl-btn-center-lr owl-dots-primary-full owl-btn-3 m-b30"
         >
-          {samenProducts.map((elm, i) => (
-            <SwiperSlide key={i} className="item">
+          {samenProducts.map((elm) => (
+            <SwiperSlide key={elm.id} className="item">
               <div className="dlab-box service-media-bx">
                 <div className="dlab-media">
                   <Link href={elm.href}>
                     <Image
-                      className="lazy"
                       width={500}
                       height={357}
                       src={elm.imageSrc}
                       alt={elm.title}
+                      style={{ width: "100%", height: "auto" }}
                     />
                   </Link>
                 </div>

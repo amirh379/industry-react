@@ -1,5 +1,5 @@
+import Footer1 from "@/components/footers/Footer1";
 import Testimonials from "@/components/common/Testimonials2";
-import Footer15 from "@/components/footers/Footer15";
 import Header22 from "@/components/headers/Header22";
 import About from "@/components/service/About";
 import Banner from "@/components/service/Banner";
@@ -27,7 +27,7 @@ export default function page() {
             <Contact />
           </div>
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );

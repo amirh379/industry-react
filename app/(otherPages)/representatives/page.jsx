@@ -1,20 +1,20 @@
 import Footer1 from "@/components/footers/Footer1";
 import Header22 from "@/components/headers/Header22";
-import AlertBox from "@/components/shortcodes/AlertBox";
+import Representatives from "@/components/otherPages/Representatives";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Shortcode Alert Box || Industry - Factory & Industrial React Nextjs Template",
-  description: "Industry - Factory & Industrial React Nextjs Template",
+  title: "نمایندگی‌ها || ثامن فرفورژه",
+  description: "نمایندگی‌های ثامن فرفورژه در سراسر کشور",
 };
+
 export default function page() {
   return (
     <>
-      <div className="page-wraper  ">
+      <div className="page-wraper">
         <Header22 />
         <div className="page-content bg-white">
-          <AlertBox />
+          <Representatives />
         </div>
         <Footer1 />
       </div>

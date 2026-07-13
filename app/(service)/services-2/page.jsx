@@ -1,4 +1,4 @@
-import Footer15 from "@/components/footers/Footer15";
+import Footer1 from "@/components/footers/Footer1";
 import Header22 from "@/components/headers/Header22";
 import Service from "@/components/homes/home-2/Service";
 
@@ -23,7 +23,7 @@ export default function page() {
             <Service />
           </div>
         </div>
-        <Footer15 />
+        <Footer1 />
       </div>
     </>
   );
