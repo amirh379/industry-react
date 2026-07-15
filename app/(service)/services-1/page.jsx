@@ -8,7 +8,7 @@ import Facts from "@/components/service/Facts";
 import React from "react";
 
 export const metadata = {
-  title: "خدمات || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page() {

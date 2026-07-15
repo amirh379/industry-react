@@ -111,12 +111,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fa" dir="rtl" className={vazirmatn.variable}>
       <head>
-        {/*
-          Persian font (Vazirmatn) is loaded via next/font/google above.
-          The Latin Google Fonts previously used here (Montserrat, Open Sans,
-          Playfair Display, Poppins, Raleway, Roboto) are no longer needed
-          for the Persian/RTL pages.
-        */}
+        <link rel="icon" href="/favicon.ico?v=2" sizes="any" />
+        <link rel="icon" href="/images/SamenLogo.png?v=2" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/SamenLogo.png?v=2" />
+        <title>ثامن فرفورژه</title>
       </head>
       <body id="bg" className={vazirmatn.className}>
         {" "}

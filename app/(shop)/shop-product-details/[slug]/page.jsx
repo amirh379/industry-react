@@ -7,7 +7,7 @@ import React from "react";
 import { products } from "@/data/products";
 
 export const metadata = {
-  title: "جزئیات محصول || صنعت - قالب فارسی کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب فارسی کارخانه و صنعتی",
 };
 export default function page({ params }) {

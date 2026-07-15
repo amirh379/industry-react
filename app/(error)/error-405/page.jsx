@@ -5,7 +5,7 @@ import React from "react";
 import { toPersianDigits } from "@/utlis/toPersianDigits";
 
 export const metadata = {
-  title: "خطای ۴۰۵ || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page() {

@@ -4,7 +4,7 @@ import Representatives from "@/components/otherPages/Representatives";
 import React from "react";
 
 export const metadata = {
-  title: "نمایندگی‌ها || ثامن فرفورژه",
+  title: "ثامن فرفورژه",
   description: "نمایندگی‌های ثامن فرفورژه در سراسر کشور",
 };
 

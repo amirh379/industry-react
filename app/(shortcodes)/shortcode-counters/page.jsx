@@ -4,8 +4,7 @@ import Counters from "@/components/shortcodes/Counters";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Shortcode Counters || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

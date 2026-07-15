@@ -7,7 +7,7 @@ import React from "react";
 import { allBlogs } from "@/data/blogs";
 
 export const metadata = {
-  title: "بلاگ تکی || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page({ params }) {

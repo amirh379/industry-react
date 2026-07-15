@@ -1,6 +1,6 @@
 import Home1 from "./(homes)/home-1/page";
 export const metadata = {
-  title: "Home || Industry - Factory & Industrial React Nextjs Template",
+  title: "ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 

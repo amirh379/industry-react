@@ -4,7 +4,7 @@ import HelpDesk from "@/components/otherPages/HelpDesk";
 import React from "react";
 
 export const metadata = {
-  title: "مرکز پشتیبانی || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page() {

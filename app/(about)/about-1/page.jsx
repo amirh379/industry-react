@@ -5,7 +5,7 @@ import Header22 from "@/components/headers/Header22";
 import React from "react";
 
 export const metadata = {
-  title: "درباره ما || ثامن فرفورژه",
+  title: "ثامن فرفورژه",
   description: "معرفی شرکت ثامن فرفورژه",
 };
 export default function page() {

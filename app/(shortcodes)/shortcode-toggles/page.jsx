@@ -4,8 +4,7 @@ import Toggle from "@/components/shortcodes/Toggle";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Shortcode Toggles || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

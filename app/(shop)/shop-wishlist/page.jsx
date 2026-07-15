@@ -6,7 +6,7 @@ import Wishlist from "@/components/shop/Wishlist";
 import React from "react";
 
 export const metadata = {
-  title: "لیست علاقه‌مندی‌ها || صنعت - قالب فارسی کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب فارسی کارخانه و صنعتی",
 };
 export default function page() {

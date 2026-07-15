@@ -4,8 +4,7 @@ import Header22 from "@/components/headers/Header22";
 import React from "react";
 import Link from "next/link";
 export const metadata = {
-  title:
-    "Blog Grid 3 Sidebar Left || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

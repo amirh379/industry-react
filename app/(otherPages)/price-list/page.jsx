@@ -4,7 +4,7 @@ import PriceList from "@/components/otherPages/PriceList";
 import React from "react";
 
 export const metadata = {
-  title: "لیست قیمت || ثامن فرفورژه",
+  title: "ثامن فرفورژه",
   description: "لیست قیمت محصولات ثامن فرفورژه",
 };
 

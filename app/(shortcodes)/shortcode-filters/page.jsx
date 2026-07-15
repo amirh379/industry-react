@@ -4,8 +4,7 @@ import Filters from "@/components/shortcodes/Filters";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Shortcode Filters || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

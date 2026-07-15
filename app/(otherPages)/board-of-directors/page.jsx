@@ -4,7 +4,7 @@ import BoardOfDirectors from "@/components/otherPages/BoardOfDirectors";
 import React from "react";
 
 export const metadata = {
-  title: "هیئت مدیره || ثامن فرفورژه",
+  title: "ثامن فرفورژه",
   description: "اعضای هیئت مدیره ثامن فرفورژه",
 };
 

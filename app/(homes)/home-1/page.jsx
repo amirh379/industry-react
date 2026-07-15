@@ -9,7 +9,7 @@ import Hero from "@/components/homes/home-1/Hero";
 import Services from "@/components/homes/home-1/Services";
 import Testimonials from "@/components/homes/home-1/Testimonials";
 export const metadata = {
-  title: "خانه || ثامن فرفورژه",
+  title: "ثامن فرفورژه",
   description: "شرکت صنایع فلزی - ثامن فرفورژه",
 };
 

@@ -4,7 +4,7 @@ import PrivacyPolicy from "@/components/otherPages/PrivacyPolicy";
 import React from "react";
 
 export const metadata = {
-  title: "قوانین حریم خصوصی || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page() {

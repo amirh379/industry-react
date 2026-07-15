@@ -9,7 +9,7 @@ import About from "@/components/homes/home-3/About";
 import React from "react";
 
 export const metadata = {
-  title: "About 2 || Industry - Factory & Industrial React Nextjs Template",
+  title: "ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

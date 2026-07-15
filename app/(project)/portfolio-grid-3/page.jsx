@@ -6,7 +6,7 @@ import Portfolio2 from "@/components/portfolio/Portfolio2";
 import React from "react";
 
 export const metadata = {
-  title: "شبکه‌ای نمونه‌کارها ۳ || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page() {

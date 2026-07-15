@@ -4,7 +4,7 @@ import Catalog from "@/components/otherPages/Catalog";
 import React from "react";
 
 export const metadata = {
-  title: "کاتالوگ || ثامن فرفورژه",
+  title: "ثامن فرفورژه",
   description: "دریافت کاتالوگ محصولات ثامن فرفورژه",
 };
 

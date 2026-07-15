@@ -4,7 +4,7 @@ import Header22 from "@/components/headers/Header22";
 import React from "react";
 
 export const metadata = {
-  title: "تماس با ما || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page() {

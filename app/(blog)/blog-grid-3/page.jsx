@@ -4,7 +4,7 @@ import Header22 from "@/components/headers/Header22";
 import React from "react";
 import Link from "next/link";
 export const metadata = {
-  title: "شبکه‌ای بلاگ ۳ || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page() {

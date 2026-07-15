@@ -6,7 +6,7 @@ import ShopFeatures from "@/components/shop/ShopFeatures";
 import React from "react";
 
 export const metadata = {
-  title: "سبد خرید || صنعت - قالب فارسی کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب فارسی کارخانه و صنعتی",
 };
 export default function page() {

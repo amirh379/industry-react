@@ -6,7 +6,7 @@ import React from "react";
 import { allProjects } from "@/data/projects";
 
 export const metadata = {
-  title: "جزئیات نمونه‌کار || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page({ params }) {

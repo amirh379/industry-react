@@ -5,8 +5,7 @@ import Portfolio1 from "@/components/portfolio/Portfolio1";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Portfolio Grid 2 || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

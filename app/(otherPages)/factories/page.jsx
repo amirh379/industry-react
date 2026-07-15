@@ -4,7 +4,7 @@ import Factories from "@/components/otherPages/Factories";
 import React from "react";
 
 export const metadata = {
-  title: "کارخانه‌ها || ثامن فرفورژه",
+  title: "ثامن فرفورژه",
   description: "کارخانه‌های ثامن فرفورژه",
 };
 

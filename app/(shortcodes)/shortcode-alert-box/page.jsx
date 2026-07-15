@@ -4,8 +4,7 @@ import AlertBox from "@/components/shortcodes/AlertBox";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Shortcode Alert Box || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

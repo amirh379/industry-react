@@ -4,8 +4,7 @@ import IconBox from "@/components/shortcodes/IconBox";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Shortcode Icon Box || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

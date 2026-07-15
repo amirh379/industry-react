@@ -4,8 +4,7 @@ import ImageBox from "@/components/shortcodes/ImageBox";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Image Box Content || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

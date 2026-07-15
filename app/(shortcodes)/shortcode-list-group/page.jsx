@@ -4,8 +4,7 @@ import ListGroup from "@/components/shortcodes/ListGroup";
 import React from "react";
 
 export const metadata = {
-  title:
-    "Shortcode List Group || Industry - Factory & Industrial React Nextjs Template",
+  title:"ثامن فرفورژه",
   description: "Industry - Factory & Industrial React Nextjs Template",
 };
 export default function page() {

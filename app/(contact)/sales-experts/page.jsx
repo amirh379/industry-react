@@ -4,7 +4,7 @@ import SalesExperts from "@/components/contact/SalesExperts";
 import React from "react";
 
 export const metadata = {
-  title: "کارشناسان فروش || صنعت - قالب کارخانه و صنعتی",
+  title: "ثامن فرفورژه",
   description: "صنعت - قالب کارخانه و صنعتی",
 };
 export default function page() {

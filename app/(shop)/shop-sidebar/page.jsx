@@ -6,7 +6,7 @@ import ShopSidebar from "@/components/shop/ShopSidebar";
 import React from "react";
 
 export const metadata = {
-  title: "محصولات || ثامن فرفورژه",
+  title: "ثامن فرفورژه",
   description: "محصولات ثامن فرفورژه",
 };
 
