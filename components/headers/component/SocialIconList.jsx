@@ -9,11 +9,7 @@ export default function SocialIconList() {
         {socialLinks.map((elm, i) => (
           <li key={i}>
             <a
-              className={
-                elm.iconSrc
-                  ? `header-social-link ${elm.className}`
-                  : `site-button circle-sm outline ${elm.className}`
-              }
+              className={`header-social-link ${elm.className}`}
               href={elm.href}
               target={elm.href !== "#" ? "_blank" : undefined}
               rel={elm.href !== "#" ? "noopener noreferrer" : undefined}

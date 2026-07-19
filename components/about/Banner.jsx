@@ -8,7 +8,7 @@ export default function Banner() {
     >
       <div className="container">
         <div className="dlab-bnr-inr-entry align-m text-center">
-          <h1 className="text-white">درباره ما</h1>
+          <h1 className="text-white">درباره شرکت ثامن فرفورژه</h1>
           {/* Breadcrumb row */}
           <div className="breadcrumb-row">
             <ul className="list-inline">

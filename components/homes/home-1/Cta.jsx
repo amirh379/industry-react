@@ -25,7 +25,10 @@ export default function Cta() {
                   </h3>
                 </div>
                 <div className="contact-right">
-                  <Link href={`/contact-1`} className="site-button appointment-btn">
+                  <Link
+                    href={`/technical-consultation`}
+                    className="site-button appointment-btn"
+                  >
                     درخواست مشاوره
                   </Link>
                 </div>

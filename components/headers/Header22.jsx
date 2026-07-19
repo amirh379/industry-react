@@ -18,13 +18,10 @@ export default function Header22() {
         <div className="container">
           <div className="row d-flex justify-content-between align-items-center">
             <div className="dlab-topbar-left topbar-left-with-social">
+              <span className="topbar-support-text">مرکز پشتیبانی:</span>
               <a href={`tel:${telHref}`} className="topbar-phone-link">
-                <i className="fas fa-phone-alt" />
                 {toPersianDigits(headerTopPhone)}
               </a>
-              <Link href="/help-desk" className="topbar-support-link">
-                مرکز پشتیبانی
-              </Link>
               <SocialIconList />
             </div>
             <div className="dlab-topbar-right header-topbar-actions">

@@ -4,5 +4,5 @@ export const companyLogoLight = "/images/SamenLogo.png";
 export const companyInfo = {
   name: "ثامن فرفورژه",
   fullName: "شرکت صنایع فلزی هشتمین نور (ثامن فرفورژه)",
-  phone: "021-38690000",
+  phone: "021-38120000",
 };

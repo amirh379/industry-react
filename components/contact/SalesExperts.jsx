@@ -5,36 +5,51 @@ import {
   internalSalesExperts,
 } from "@/data/salesExperts";
 
-function ExpertCard({ expert }) {
+const borderThemes = ["navy", "gold"];
+
+function ExpertCard({ expert, theme }) {
   const telHref = expert.phone.replace(/-/g, "").replace("+", "");
 
   return (
     <div className="col-lg-4 col-md-6 m-b30">
-      <div className="representative-card bg-white box-shadow radius-sm">
-        <h4 className="representative-title">{expert.name}</h4>
-        <p className="representative-city m-b20">{expert.position}</p>
-        <ul className="representative-social">
-          <li>
-            <a href={`tel:${telHref}`} aria-label="تماس تلفنی">
-              <i className="fas fa-phone-alt" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={expert.baleHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="بله"
-            >
-              <img
-                src="/images/social/bale-black.png"
-                alt="بله"
-                width={20}
-                height={20}
-              />
-            </a>
-          </li>
-        </ul>
+      <div
+        className={`expert-person-card bg-white box-shadow radius-sm border-theme-${theme}`}
+      >
+        <div className="expert-person-media">
+          {/* Image slot ready for upcoming expert photos */}
+        </div>
+        <div className="expert-person-info">
+          <h4 className="expert-person-title">{expert.name}</h4>
+          <p className="expert-person-position m-b20">{expert.position}</p>
+          <ul className="expert-person-social">
+            <li>
+              <a
+                href={`tel:${telHref}`}
+                aria-label="تماس تلفنی"
+                className="social-phone"
+              >
+                <i className="fas fa-phone-alt" />
+              </a>
+            </li>
+            <li>
+              <a
+                href={expert.baleHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="بله"
+                className="social-bale"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/social/bale-black.png"
+                  alt="بله"
+                  width={20}
+                  height={20}
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   );
@@ -74,27 +89,49 @@ export default function SalesExperts() {
 
             <div className="expert-section-title">
               <h3 className="title">
-                <i className="fas fa-flag text-primary" /> کارشناسان فروش
-                داخلی
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/icons/iran-map.svg"
+                  alt=""
+                  className="expert-section-icon-img"
+                  width={34}
+                  height={34}
+                />
+                کارشناسان فروش داخلی
               </h3>
               <div className="expert-section-line expert-section-line-primary" />
             </div>
             <div className="row">
-              {internalSalesExperts.map((expert) => (
-                <ExpertCard expert={expert} key={expert.id} />
+              {internalSalesExperts.map((expert, index) => (
+                <ExpertCard
+                  expert={expert}
+                  key={expert.id}
+                  theme={borderThemes[index % borderThemes.length]}
+                />
               ))}
             </div>
 
             <div className="expert-section-title m-t30">
               <h3 className="title">
-                <i className="fas fa-globe-americas expert-section-icon-external" />{" "}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/images/icons/globe-color.svg"
+                  alt=""
+                  className="expert-section-icon-img"
+                  width={34}
+                  height={34}
+                />
                 کارشناسان فروش خارجی (صادرات)
               </h3>
-              <div className="expert-section-line expert-section-line-external" />
+              <div className="expert-section-line expert-section-line-gold" />
             </div>
             <div className="row">
-              {externalSalesExperts.map((expert) => (
-                <ExpertCard expert={expert} key={expert.id} />
+              {externalSalesExperts.map((expert, index) => (
+                <ExpertCard
+                  expert={expert}
+                  key={expert.id}
+                  theme={borderThemes[index % borderThemes.length]}
+                />
               ))}
             </div>
           </div>
