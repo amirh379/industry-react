@@ -9,7 +9,6 @@ export const socialLinks = [
   {
     className: "telegram",
     iconClass: "fab fa-telegram-plane",
-    iconSrc: "/images/social/bale-black.png",
     ariaLabel: "تلگرام",
     href: "https://t.me/Hnsamenferforge",
   },
@@ -39,13 +38,19 @@ export const footerSocialLinks = [
     className: "whatsapp",
     iconClass: "fab fa-whatsapp",
     ariaLabel: "واتس‌اپ",
-    href: "https://wa.me/982138690000",
+    href: "https://wa.me/982138120000",
   },
   {
     className: "linkedin",
     iconClass: "fab fa-linkedin-in",
     ariaLabel: "لینکدین",
     href: "https://www.linkedin.com/company/samenferforge",
+  },
+  {
+    className: "aparat",
+    iconSrc: "/images/social/aparat.svg",
+    ariaLabel: "آپارات",
+    href: "https://www.apparat.com",
   },
 ];
 

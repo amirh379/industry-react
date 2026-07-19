@@ -97,12 +97,22 @@ export default function Footer1() {
                         className={`footer-social-link ${social.className}`}
                       >
                         {social.iconSrc ? (
-                          <Image
-                            src={social.iconSrc}
-                            alt={social.ariaLabel}
-                            width={24}
-                            height={24}
-                          />
+                          social.iconSrc.endsWith(".svg") ? (
+                            // eslint-disable-next-line @next/next/no-img-element
+                            <img
+                              src={social.iconSrc}
+                              alt={social.ariaLabel}
+                              width={24}
+                              height={24}
+                            />
+                          ) : (
+                            <Image
+                              src={social.iconSrc}
+                              alt={social.ariaLabel}
+                              width={24}
+                              height={24}
+                            />
+                          )
                         ) : (
                           <i className={social.iconClass} />
                         )}
@@ -111,6 +121,17 @@ export default function Footer1() {
                   ))}
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <div className="container">
+          <div className="row">
+            <div className="col-12 text-center">
+              <span className="footer-copyright-text">
+                تمام حقوق برای شرکت تولیدی ثامن فرفورژه محفوظ می‌باشد
+              </span>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ export default function Nav() {
   const aboutLinks = [
     { href: "/about-1", label: "درباره ما" },
     { href: "/board-of-directors", label: "هیئت مدیره" },
-    { href: "/factories", label: "کارخانه‌ها" },
+    { href: "/factories", label: "توانمندی‌ها" },
     { href: "/sales-experts", label: "کارشناسان فروش" },
   ];
   const isRouteActive = (href) => {
@@ -78,12 +78,14 @@ export default function Nav() {
           ))}
         </ul>
       </li>
-      <li className={isRouteActive("/contact-1") ? "active" : ""}>
+      <li className={isRouteActive("/technical-consultation") ? "active" : ""}>
         <Link
-          className={isRouteActive("/contact-1") ? "menuActive" : ""}
-          href={`/contact-1`}
+          className={
+            isRouteActive("/technical-consultation") ? "menuActive" : ""
+          }
+          href={`/technical-consultation`}
         >
-          تماس با ما
+          درخواست مشاوره فنی
         </Link>
       </li>
     </>

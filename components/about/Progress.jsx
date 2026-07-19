@@ -1,4 +1,11 @@
 import Image from "next/image";
+import { companyInfo } from "@/data/company";
+
+const progressItems = [
+  { label: "کیفیت تولید", value: 92 },
+  { label: "رضایت مشتریان", value: 88 },
+  { label: "تحویل به‌موقع", value: 85 },
+];
 
 export default function Progress() {
   return (
@@ -9,67 +16,41 @@ export default function Progress() {
             <div className="max-w700 m-auto content-inner">
               <div className="section-head">
                 <h2 className="title">
-                  We provide the exceptional service we'd want to experience
-                  ourselves
+                  خدماتی ارائه می‌دهیم که خودمان هم انتظارش را داریم
                 </h2>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer
+                  {companyInfo.name} با تمرکز بر کیفیت، طراحی و پشتیبانی، مسیر
+                  همکاری پایدار با مشتریان را دنبال می‌کند. جزئیات این بخش
+                  به‌زودی تکمیل می‌شود.
                 </p>
               </div>
-              <div className="about-progress-box">
-                <h6 className="text-primary">
-                  Web Development
-                  <span className="progress-num pull-right">85%</span>
-                </h6>
-                <div className="about-progress-bar bg-gray-dark">
-                  <div
-                    className="about-progress bg-primary wow slideInLeft"
-                    data-wow-delay="0.2s"
-                    data-wow-duration="2s"
-                    style={{ width: "85%" }}
-                  />
+              {progressItems.map((item, index) => (
+                <div className="about-progress-box" key={item.label}>
+                  <h6 className="text-primary">
+                    {item.label}
+                    <span className="progress-num pull-right">
+                      {item.value}%
+                    </span>
+                  </h6>
+                  <div className="about-progress-bar bg-gray-dark">
+                    <div
+                      className="about-progress bg-primary wow slideInLeft"
+                      data-wow-delay={`${0.2 + index * 0.2}s`}
+                      data-wow-duration="2s"
+                      style={{ width: `${item.value}%` }}
+                    />
+                  </div>
                 </div>
-              </div>
-              <div className="about-progress-box">
-                <h6 className="text-primary">
-                  Web Designer
-                  <span className="progress-num pull-right">80%</span>
-                </h6>
-                <div className="about-progress-bar bg-gray-dark">
-                  <div
-                    className="about-progress bg-primary wow slideInLeft"
-                    data-wow-delay="0.4s"
-                    data-wow-duration="2s"
-                    style={{ width: "80%" }}
-                  />
-                </div>
-              </div>
-              <div className="about-progress-box">
-                <h6 className="text-primary">
-                  Performance
-                  <span className="progress-num pull-right">75%</span>
-                </h6>
-                <div className="about-progress-bar bg-gray-dark">
-                  <div
-                    className="about-progress bg-primary wow slideInLeft"
-                    data-wow-delay="0.6s"
-                    data-wow-duration="2s"
-                    style={{ width: "75%" }}
-                  />
-                </div>
-              </div>
+              ))}
             </div>
           </div>
           <div className="col-lg-5 col-md-12 p-a0">
             <Image
-              alt=""
+              alt={companyInfo.name}
               className="img-cover"
               src="/images/about/pic5.jpg"
-              width="1000"
-              height="674"
+              width={1000}
+              height={674}
             />
           </div>
         </div>

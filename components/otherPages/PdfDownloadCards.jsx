@@ -50,7 +50,6 @@ export default function PdfDownloadCards({
                     </div>
                     <h5 className="dlab-tilte">{item.title}</h5>
                     <p>{item.description}</p>
-                    <span className="catalog-card-size">{item.fileSize}</span>
                     <a
                       href={item.fileHref}
                       download

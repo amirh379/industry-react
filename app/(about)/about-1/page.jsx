@@ -1,13 +1,17 @@
 import Footer1 from "@/components/footers/Footer1";
-import About from "@/components/about/CompanyIntro";
+import About2 from "@/components/about/About2";
 import Banner from "@/components/about/Banner";
+import Progress from "@/components/about/Progress";
 import Header22 from "@/components/headers/Header22";
+import Services from "@/components/homes/home-1/Services";
+import About from "@/components/about/CompanyAboutStory";
 import React from "react";
 
 export const metadata = {
-  title: "ثامن فرفورژه",
-  description: "معرفی شرکت ثامن فرفورژه",
+  title: "درباره شرکت ثامن فرفورژه",
+  description: "معرفی شرکت تولیدی ثامن فرفورژه",
 };
+
 export default function page() {
   return (
     <>
@@ -16,6 +20,9 @@ export default function page() {
         <div className="page-content bg-white">
           <Banner />
           <About />
+          <About2 />
+          <Services />
+          <Progress />
         </div>
         <Footer1 />
       </div>
