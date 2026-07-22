@@ -4,7 +4,6 @@ import React, { useMemo, useState } from "react";
 import Link from "next/link";
 import { IRAN_PROVINCES, representatives } from "@/data/representatives";
 import { socialLinks } from "@/data/socials";
-import IranProvinceMap from "./IranProvinceMap";
 
 const socialIconMap = Object.fromEntries(
   socialLinks.map((item) => [item.className, item])
@@ -30,8 +29,8 @@ export default function Representatives() {
   return (
     <>
       <div
-        className="dlab-bnr-inr overlay-black-middle text-center bg-pt"
-        style={{ backgroundImage: "url(/images/banner/bnr4.jpg)" }}
+        style={{ backgroundImage: "url(/images/representatives2.png)" }}
+        className="dlab-bnr-inr overlay-black-middle text-center bg-pt representatives-banner"
       >
         <div className="container">
           <div className="dlab-bnr-inr-entry align-m text-center">
@@ -53,45 +52,50 @@ export default function Representatives() {
             <h2 className="title">
               شبکه نمایندگی‌های ثامن فرفورژه در سراسر کشور
             </h2>
-            <p>استان مورد نظر را از فهرست یا روی نقشه انتخاب کنید.</p>
+            <p>استان مورد نظر را از فهرست زیر انتخاب کنید.</p>
           </div>
 
-          <div className="row align-items-start m-b40">
-            <div className="col-lg-5 m-b30">
-              <div className="representatives-filter">
-                <label htmlFor="province-select" className="form-label">
-                  انتخاب استان
-                </label>
-                <select
-                  id="province-select"
-                  className="form-select form-select-lg"
-                  value={selectedProvince}
-                  onChange={(event) => setSelectedProvince(event.target.value)}
+          <div className="representatives-filter-wrap m-b40">
+            <div className="representatives-filter">
+              <label htmlFor="province-select" className="form-label">
+                انتخاب استان
+              </label>
+              <select
+                id="province-select"
+                className="form-select form-select-lg"
+                value={selectedProvince}
+                onChange={(event) => setSelectedProvince(event.target.value)}
+              >
+                <option value="">همه استان‌ها</option>
+                {IRAN_PROVINCES.map((province) => (
+                  <option key={province} value={province}>
+                    {province}
+                    {availableProvinces.includes(province) ? " ●" : ""}
+                  </option>
+                ))}
+              </select>
+              {selectedProvince ? (
+                <button
+                  type="button"
+                  className="site-button button-sm m-t15"
+                  onClick={() => setSelectedProvince("")}
                 >
-                  <option value="">همه استان‌ها</option>
-                  {IRAN_PROVINCES.map((province) => (
-                    <option key={province} value={province}>
-                      {province}
-                      {availableProvinces.includes(province) ? " ●" : ""}
-                    </option>
-                  ))}
-                </select>
-                {selectedProvince ? (
-                  <button
-                    type="button"
-                    className="site-button button-sm m-t15"
-                    onClick={() => setSelectedProvince("")}
-                  >
-                    نمایش همه
-                  </button>
-                ) : null}
-              </div>
+                  نمایش همه
+                </button>
+              ) : null}
+              <p className="representatives-filter-hint m-t15 m-b0">
+                استان‌های دارای نمایندگی با علامت ● مشخص شده‌اند.
+              </p>
             </div>
-            <div className="col-lg-7 m-b30">
-              <IranProvinceMap
-                selectedProvince={selectedProvince}
-                availableProvinces={availableProvinces}
-                onSelect={setSelectedProvince}
+          </div>
+
+          <div className="iran-map-static m-b40">
+            <h3 className="iran-map-static-title">راهنمای تقسیمات کشوری</h3>
+            <div className="iran-map-static-image">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/iran-provinces.jpeg"
+                alt="نقشه استان‌های ایران"
               />
             </div>
           </div>

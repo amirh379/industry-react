@@ -4,8 +4,8 @@ import Header22 from "@/components/headers/Header22";
 import React from "react";
 
 export const metadata = {
-  title: "درخواست مشاوره فنی | ثامن فرفورژه",
-  description: "درخواست مشاوره فنی شرکت تولیدی ثامن فرفورژه",
+  title: "تماس با ما | ثامن فرفورژه",
+  description: "تماس با شرکت تولیدی ثامن فرفورژه و درخواست مشاوره فنی",
 };
 
 export default function page() {

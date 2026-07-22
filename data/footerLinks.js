@@ -4,7 +4,7 @@ export const footerLinks = [
   { href: "/sales-experts", label: "کارشناس های فروش" },
   { href: "/technical-consultation", label: "مشاوره" },
   { href: "/about-1", label: "درباره ثامن فرفوژه" },
-  { href: "/technical-consultation", label: "درخواست مشاوره فنی" },
+  { href: "/technical-consultation", label: "تماس با ما" },
   { href: "/portfolio-grid-3", label: "پروژه ها" },
   { href: "/catalog", label: "دریافت کاتالوگ" },
   

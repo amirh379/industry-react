@@ -46,6 +46,12 @@ export default function PdfDownloadCards({
                         alt={item.title}
                         width={400}
                         height={260}
+                        style={{
+                          width: "100%",
+                          height: "100%",
+                          objectFit: "cover",
+                          objectPosition: "center",
+                        }}
                       />
                     </div>
                     <h5 className="dlab-tilte">{item.title}</h5>

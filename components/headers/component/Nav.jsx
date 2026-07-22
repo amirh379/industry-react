@@ -85,7 +85,7 @@ export default function Nav() {
           }
           href={`/technical-consultation`}
         >
-          درخواست مشاوره فنی
+          تماس با ما
         </Link>
       </li>
     </>

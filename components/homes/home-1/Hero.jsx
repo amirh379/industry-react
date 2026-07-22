@@ -8,11 +8,7 @@ import { companyInfo } from "@/data/company";
 
 const heroSlides = [
   {
-    backgroundImage: "/images/company/hero-bg.jpg",
-  },
-  // Duplicate for now so the slider UI is visible; replace with new images later.
-  {
-    backgroundImage: "/images/company/hero-bg.jpg",
+    backgroundImage: "/images/home-slider.jpg",
   },
 ];
 
@@ -22,16 +18,24 @@ export default function Hero() {
       <Swiper
         modules={[Autoplay, Pagination]}
         slidesPerView={1}
-        loop
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
+        loop={heroSlides.length > 1}
+        autoplay={
+          heroSlides.length > 1
+            ? {
+                delay: 5000,
+                disableOnInteraction: false,
+              }
+            : false
+        }
         speed={1200}
-        pagination={{
-          clickable: true,
-          el: ".home-hero-pagination",
-        }}
+        pagination={
+          heroSlides.length > 1
+            ? {
+                clickable: true,
+                el: ".home-hero-pagination",
+              }
+            : false
+        }
         className="home-hero-slider"
       >
         {heroSlides.map((slide, index) => (
@@ -72,7 +76,7 @@ export default function Hero() {
             </div>
           </SwiperSlide>
         ))}
-        <div className="home-hero-pagination" />
+        {heroSlides.length > 1 ? <div className="home-hero-pagination" /> : null}
       </Swiper>
     </div>
   );
