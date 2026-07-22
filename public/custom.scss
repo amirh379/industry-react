@@ -768,6 +768,7 @@ a {
 .home-hero {
   position: relative;
   min-height: 520px;
+  overflow: hidden;
 
   .home-hero-slider {
     width: 100%;
@@ -777,13 +778,16 @@ a {
   .swiper-slide {
     position: relative;
     min-height: 520px;
+    overflow: hidden;
   }
 
   .home-hero-bg {
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
     z-index: 0;
   }
@@ -1002,6 +1006,19 @@ a {
     color: #fff !important;
   }
 
+  .contact-consult-link-box {
+    .site-button {
+      background: #c9a227;
+      border: none;
+      color: #fff;
+
+      &:hover {
+        background: #b08d1f;
+        color: #fff;
+      }
+    }
+  }
+
   .contact-form-intro {
     text-align: center;
     font-weight: 700;
@@ -1053,14 +1070,22 @@ a {
   }
 
   .catalog-card-image {
+    position: relative;
     margin: -40px -25px 20px;
+    width: calc(100% + 50px);
+    height: 200px;
     overflow: hidden;
     border-radius: 4px 4px 0 0;
+    background: #f3f3f3;
 
-    img {
-      width: 100%;
-      height: 200px;
+    img,
+    span,
+    span img {
+      width: 100% !important;
+      height: 100% !important;
+      max-width: 100%;
       object-fit: cover;
+      object-position: center;
       display: block;
     }
   }
@@ -1405,10 +1430,30 @@ a {
   .shop-product-info {
     background: #fff;
   }
+
+  .site-button::before,
+  .site-button::after {
+    display: none !important;
+    content: none !important;
+  }
+}
+
+// Hide chevron/arrow on shop sidebar category buttons
+.ext-sidebar-menu.widget_nav_menu ul.menu li::before,
+.ext-sidebar-menu ul.menu li::before {
+  content: none !important;
+  display: none !important;
 }
 
 // Representatives page
+.representatives-filter-wrap {
+  display: flex;
+  justify-content: center;
+}
+
 .representatives-filter {
+  width: 100%;
+  max-width: 480px;
   background: #fff;
   border-radius: 8px;
   padding: 24px 20px;
@@ -1418,72 +1463,50 @@ a {
     font-weight: 600;
     margin-bottom: 10px;
   }
+
+  .representatives-filter-hint {
+    font-size: 13px;
+    color: #666;
+  }
 }
 
-.representatives-search {
-  max-width: 480px;
+.representatives-banner {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+.iran-map-static {
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-}
-
-.iran-map-wrap {
   background: #fff;
   border-radius: 8px;
-  padding: 16px;
+  padding: 24px 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
-}
+  border: 1px solid rgba(0, 0, 0, 0.08);
 
-.iran-map-svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.iran-map-province {
-  fill: #d9dee7;
-  stroke: #fff;
-  stroke-width: 1.5;
-  cursor: pointer;
-  transition: fill 0.2s ease, stroke 0.2s ease;
-
-  &.has-rep {
-    fill: #9eb4d0;
+  .iran-map-static-title {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 16px;
+    color: #222;
   }
 
-  &:hover {
-    fill: #c9a227;
-  }
+  .iran-map-static-image {
+    text-align: center;
+    background: #fafafa;
+    border-radius: 4px;
+    padding: 12px;
 
-  &.is-active {
-    fill: var(--color-primary);
-    stroke: #c9a227;
-    stroke-width: 2;
-  }
-}
-
-.iran-map-legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
-  margin-top: 12px;
-  font-size: 13px;
-  color: #555;
-
-  .legend-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-
-    &::before {
-      content: "";
-      width: 14px;
-      height: 14px;
-      border-radius: 3px;
-      background: #d9dee7;
-    }
-
-    &.has-rep::before {
-      background: #9eb4d0;
+    img {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
     }
   }
 }

@@ -129,10 +129,33 @@ export default function Contact1() {
                   </div>
                 </div>
               </div>
+              <div className="col-lg-12 col-md-12 m-b30">
+                <div className="icon-bx-wraper bx-style-1 p-a20 radius-sm contact-info-box contact-consult-link-box">
+                  <div className="icon-content">
+                    <h5 className="dlab-tilte">
+                      <span className="icon-sm contact-info-icon">
+                        <i className="ti-comments" />
+                      </span>
+                      مشاوره فنی
+                    </h5>
+                    <p className="m-b15">
+                      برای دریافت مشاوره تخصصی درباره طراحی، تعمیر یا سفارش
+                      محصولات، فرم درخواست را تکمیل کنید.
+                    </p>
+                    <a
+                      href="#consultation-form"
+                      className="site-button button-sm"
+                    >
+                      درخواست مشاوره فنی
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="col-lg-8 col-md-12 m-b30">
             <form
+              id="consultation-form"
               onSubmit={handleSubmit}
               className="inquiry-form wow box-shadow bg-white fadeInUp"
               data-wow-delay="0.2s"
